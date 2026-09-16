@@ -14,8 +14,8 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl border-2 border-neutral-900 p-8 shadow-md flex flex-col justify-between relative">
-            <div className="absolute -top-3.5 left-8 bg-neutral-900 text-white font-mono text-[11px] font-semibold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-xs">
+          <div className="bg-white rounded-3xl border-2 border-emerald-700 p-8 shadow-md flex flex-col justify-between relative">
+            <div className="absolute -top-3.5 left-8 bg-emerald-700 text-white font-mono text-[11px] font-semibold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-xs">
               {dict.free.badgeTop}
             </div>
             <div>
@@ -47,7 +47,7 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
             </div>
             <div className="mt-8 pt-6 border-t border-neutral-100">
               <a
-                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-lg bg-neutral-900 text-white hover:bg-neutral-800 transition-colors shadow-sm"
+                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-colors shadow-sm"
                 href={DEMO_URL}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -57,8 +57,8 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
             </div>
           </div>
 
-          <div className="bg-neutral-900 text-white rounded-2xl border border-neutral-800 p-8 flex flex-col justify-between relative shadow-xl">
-            <div className="absolute -top-3.5 left-8 bg-neutral-800 text-neutral-300 font-mono text-[11px] font-semibold px-3 py-0.5 rounded-full uppercase tracking-wider border border-neutral-700">
+          <div className="bg-neutral-950 text-white rounded-3xl border border-neutral-800 p-8 flex flex-col justify-between relative shadow-xl">
+            <div className="absolute -top-3.5 left-8 bg-pop text-neutral-950 font-mono text-[11px] font-semibold px-3 py-0.5 rounded-full uppercase tracking-wider">
               {dict.premium.badgeTop}
             </div>
             <div>
@@ -84,7 +84,7 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
             </div>
             <div className="mt-8 pt-6 border-t border-neutral-800">
               <button
-                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-lg bg-neutral-800 text-neutral-400 cursor-not-allowed border border-neutral-700"
+                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-full bg-neutral-800 text-neutral-400 cursor-not-allowed border border-neutral-700"
                 disabled
                 type="button"
               >

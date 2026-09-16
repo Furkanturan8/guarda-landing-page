@@ -22,9 +22,9 @@ export function ShowcaseTabs({
           <button
             key={tab.id}
             className={cn(
-              "px-4 py-2 rounded-lg text-xs font-medium border transition-all",
+              "px-4 py-2 rounded-full text-xs font-medium border transition-all",
               tab.id === activeTab
-                ? "border-neutral-900 bg-neutral-950 text-white shadow-xs"
+                ? "border-emerald-700 bg-emerald-700 text-white shadow-xs"
                 : "border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50 hover:text-neutral-950",
             )}
             onClick={() => setActiveTab(tab.id)}
@@ -35,8 +35,8 @@ export function ShowcaseTabs({
         ))}
       </div>
 
-      <div className="max-w-6xl mx-auto rounded-2xl border border-neutral-200 bg-neutral-50/50 p-5 shadow-xl overflow-hidden">
-        <div className="rounded-t-xl bg-white border border-neutral-200 overflow-hidden">
+      <div className="max-w-6xl mx-auto rounded-3xl border border-neutral-200 bg-neutral-50/50 p-5 shadow-xl overflow-hidden">
+        <div className="rounded-t-2xl bg-white border border-neutral-200 overflow-hidden">
           <div className="h-10 bg-neutral-50 border-b border-neutral-200 px-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-neutral-300" />

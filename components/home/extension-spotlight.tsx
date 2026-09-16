@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal"
 export function ExtensionSpotlight({ dict }: { dict: Dictionary["extension"] }) {
   return (
     <Reveal>
-      <article className="mt-6 grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all duration-500 hover:border-neutral-400 hover:shadow-float-window">
+      <article className="mt-6 grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-3xl border border-neutral-200 bg-white transition-all duration-500 hover:border-emerald-300 hover:shadow-float-window">
         <div className="p-6 md:p-10 flex flex-col justify-center">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="text-[11px] font-mono uppercase tracking-wider bg-neutral-100 text-neutral-700 px-2 py-1 rounded border border-neutral-200">

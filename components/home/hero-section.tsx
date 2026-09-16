@@ -13,7 +13,7 @@ export function HeroSection({
 }) {
   return (
     <section className="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(#e5e5e5_1px,transparent_1px)] [background-size:24px_24px] opacity-60 -z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#e6e4d8_1px,transparent_1px)] [background-size:24px_24px] opacity-60 -z-10 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Reveal>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-white text-xs font-medium text-neutral-700 shadow-sm mb-6">
@@ -29,7 +29,10 @@ export function HeroSection({
         <Reveal delay={90}>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-950 max-w-4xl mx-auto leading-[1.15]">
             {dict.headlineLine1} <br className="hidden sm:block" />
-            <span className="text-neutral-500 font-normal">{dict.headlineLine2}</span>
+            <span className="relative inline-block text-emerald-800 font-extrabold">
+              <span className="absolute inset-x-0 bottom-1 h-3 sm:h-4 -z-10 bg-pop/70 rounded-sm" aria-hidden="true" />
+              {dict.headlineLine2}
+            </span>
           </h1>
         </Reveal>
 
@@ -45,7 +48,7 @@ export function HeroSection({
         <Reveal delay={270}>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <a
-              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-medium px-6 py-3 rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 transition-all shadow-md hover:shadow-lg active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-semibold px-6 py-3 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-all shadow-md hover:shadow-lg active:scale-95"
               href={DEMO_URL}
               rel="noopener noreferrer"
               target="_blank"
@@ -53,7 +56,7 @@ export function HeroSection({
               {dict.ctaPrimary}
             </a>
             <a
-              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-medium px-5 py-3 rounded-lg bg-white border border-neutral-200 text-neutral-700 hover:bg-neutral-50 hover:text-neutral-950 transition-all shadow-sm"
+              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-medium px-5 py-3 rounded-full bg-white border border-neutral-200 text-neutral-700 hover:bg-neutral-50 hover:text-neutral-950 transition-all shadow-sm"
               href="#ozellikler"
             >
               {dict.ctaSecondary}
@@ -78,11 +81,11 @@ export function HeroSection({
           <div className="mt-14 max-w-6xl mx-auto relative">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-x-10 -top-10 h-52 rounded-full bg-neutral-400/25 blur-3xl -z-10"
+              className="pointer-events-none absolute inset-x-10 -top-10 h-52 rounded-full bg-gradient-to-r from-emerald-300/30 via-pop/30 to-emerald-300/30 blur-3xl -z-10"
             />
             <div className="animate-float">
-              <div className="rounded-xl border border-neutral-300/80 bg-neutral-900/5 p-4 shadow-float-window backdrop-blur-sm overflow-hidden">
-                <div className="rounded-t-lg bg-white border border-neutral-200 overflow-hidden text-left">
+              <div className="rounded-2xl border border-neutral-300/80 bg-neutral-900/5 p-4 shadow-float-window backdrop-blur-sm overflow-hidden">
+                <div className="rounded-t-xl bg-white border border-neutral-200 overflow-hidden text-left">
                   <div className="h-10 bg-neutral-50 border-b border-neutral-200 flex items-center px-4 justify-between">
                     <div className="flex items-center gap-2">
                       <span className="w-3 h-3 rounded-full bg-red-400/90 inline-block" />
@@ -115,7 +118,7 @@ export function HeroSection({
               className="hidden sm:flex absolute -top-5 -left-4 md:-left-8 z-30 items-center gap-2.5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-neutral-200 shadow-xl text-left pointer-events-none animate-bounce duration-1000"
               style={{ animationDuration: "4s" }}
             >
-              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-neutral-900 text-white font-mono text-xs shadow-sm">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-700 text-white font-mono text-xs shadow-sm">
                 ⌘K
               </span>
               <div>

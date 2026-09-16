@@ -18,7 +18,7 @@ export function ProductShowcaseCard({
 }) {
   return (
     <Reveal>
-      <article className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all duration-500 hover:border-neutral-400 hover:shadow-float-window">
+      <article className="group flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white transition-all duration-500 hover:border-emerald-300 hover:shadow-float-window">
         <div className="p-6 md:p-8 md:pb-6">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[11px] font-mono uppercase tracking-wider bg-neutral-100 text-neutral-700 px-2 py-1 rounded border border-neutral-200">
@@ -31,7 +31,7 @@ export function ProductShowcaseCard({
         </div>
         <div className="mt-auto pl-6 md:pl-8">
           <div className="relative w-full aspect-[400/254] md:aspect-[584/320] overflow-hidden">
-            <div className="absolute top-0 left-0 w-[165%] md:w-[145%] rounded-tl-xl border border-neutral-200 bg-white shadow-[0_24px_48px_-20px_rgba(0,0,0,0.28)] overflow-hidden transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:-translate-x-1">
+            <div className="absolute top-0 left-0 w-[165%] md:w-[145%] rounded-tl-2xl border border-neutral-200 bg-white shadow-[0_24px_48px_-20px_rgba(18,33,29,0.32)] overflow-hidden transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:-translate-x-1">
               <div className="h-7 bg-neutral-50 border-b border-neutral-200 flex items-center gap-1.5 px-3">
                 <span className="w-2 h-2 rounded-full bg-neutral-300" />
                 <span className="w-2 h-2 rounded-full bg-neutral-300" />

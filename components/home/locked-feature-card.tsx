@@ -15,7 +15,7 @@ export function LockedFeatureCard({
 }) {
   return (
     <Reveal>
-      <div className="relative p-6 rounded-xl border border-neutral-200 bg-neutral-50/50 backdrop-blur-xs flex flex-col justify-between overflow-hidden group hover:border-neutral-300 hover:-translate-y-1 transition-all duration-500">
+      <div className="relative p-6 rounded-2xl border border-neutral-200 bg-neutral-50/50 backdrop-blur-xs flex flex-col justify-between overflow-hidden group hover:border-emerald-300 hover:-translate-y-1 transition-all duration-500">
         <div className="absolute top-3 right-3">
           <span className="badge-soon inline-flex items-center gap-1 text-[11px] font-mono text-neutral-700 px-2 py-0.5 rounded">
             <span>🔒</span> {comingSoonLabel}

@@ -81,8 +81,8 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
       <div className="relative max-w-5xl mx-auto">
         <div className="hidden lg:block absolute top-[44px] left-8 right-8 h-10 pointer-events-none z-0">
           <svg className="w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 900 40">
-            <path d="M 60 20 L 840 20" stroke="#E5E5E5" strokeLinecap="round" strokeWidth="2.5" />
-            <path d="M 60 20 L 840 20" opacity="0.85" stroke="#10B981" strokeLinecap="round" strokeWidth="2.5" />
+            <path d="M 60 20 L 840 20" stroke="#E6E4D8" strokeLinecap="round" strokeWidth="2.5" />
+            <path d="M 60 20 L 840 20" opacity="0.85" stroke="#2F6D4A" strokeLinecap="round" strokeWidth="2.5" />
           </svg>
         </div>
 

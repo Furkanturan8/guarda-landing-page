@@ -17,7 +17,7 @@ export function FinalCtaSection({ dict }: { dict: Dictionary["finalCta"] }) {
           <p className="mt-4 text-sm sm:text-base text-neutral-400 max-w-xl mx-auto">{dict.description}</p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-semibold px-8 py-3.5 rounded-lg bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center text-sm font-semibold px-8 py-3.5 rounded-full bg-pop text-neutral-950 hover:bg-pop/90 transition-all shadow-lg active:scale-95"
               href={DEMO_URL}
               rel="noopener noreferrer"
               target="_blank"

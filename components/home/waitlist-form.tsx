@@ -19,13 +19,13 @@ export function WaitlistForm({ dict }: { dict: Dictionary["premium"]["waitlist"]
       }}
     >
       <input
-        className="text-xs px-3.5 py-2.5 rounded-lg border border-neutral-300 focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 outline-none w-full sm:w-60 bg-white"
+        className="text-xs px-4 py-2.5 rounded-full border border-neutral-300 focus:border-emerald-700 focus:ring-1 focus:ring-emerald-700 outline-none w-full sm:w-60 bg-white"
         placeholder={dict.placeholder}
         required
         type="email"
       />
       <button
-        className="text-xs font-semibold px-4 py-2.5 rounded-lg bg-neutral-900 text-white hover:bg-neutral-800 transition-colors shrink-0"
+        className="text-xs font-semibold px-4 py-2.5 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-colors shrink-0"
         type="submit"
       >
         {dict.button}

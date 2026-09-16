@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
-import { Inter, JetBrains_Mono } from "next/font/google"
+import { Manrope, JetBrains_Mono } from "next/font/google"
 import { tr } from "@/lib/i18n/dictionaries/tr"
 import "./globals.css"
 
-const inter = Inter({
-  variable: "--font-inter",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 })
 
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="tr" className={`${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}>
-      <body className="bg-neutral-50 text-neutral-900 selection:bg-neutral-900 selection:text-white">
+    <html lang="tr" className={`${manrope.variable} ${jetbrainsMono.variable} scroll-smooth`}>
+      <body className="bg-neutral-50 text-neutral-900 selection:bg-pop selection:text-neutral-950">
         {children}
       </body>
     </html>

@@ -19,10 +19,10 @@ export function CapabilityCard({
     <Reveal>
       <article
         className={cn(
-          "rounded-2xl border p-6 md:p-8 transition-all duration-500 hover:-translate-y-1",
+          "rounded-3xl border p-6 md:p-8 transition-all duration-500 hover:-translate-y-1",
           dark
             ? "border-neutral-800 bg-neutral-950 text-white"
-            : "border-neutral-200 bg-white hover:border-neutral-400",
+            : "border-neutral-200 bg-white hover:border-emerald-300",
         )}
       >
         <span

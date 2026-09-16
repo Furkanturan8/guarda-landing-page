@@ -41,7 +41,7 @@ export function SiteHeader({ dict, locale }: { dict: Dictionary["nav"]; locale: 
           </div>
           <LanguageSwitcher locale={locale} />
           <a
-            className="inline-flex items-center justify-center text-xs font-semibold px-3.5 py-2 rounded-md bg-neutral-900 text-white hover:bg-neutral-800 transition-all shadow-sm hover:shadow active:scale-[0.98]"
+            className="inline-flex items-center justify-center text-xs font-semibold px-4 py-2 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-all shadow-sm hover:shadow active:scale-[0.98]"
             href={DEMO_URL}
             rel="noopener noreferrer"
             target="_blank"
