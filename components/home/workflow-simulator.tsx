@@ -314,7 +314,7 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
                   <span className="text-xs font-mono text-neutral-500">{stage.step3.priorityLabel}</span>
                   <button
-                    className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition-colors shadow-xs flex items-center gap-1"
+                    className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 transition-colors shadow-xs flex items-center gap-1"
                     onClick={() => goToStep(4)}
                     type="button"
                   >

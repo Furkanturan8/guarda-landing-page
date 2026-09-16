@@ -319,6 +319,8 @@ export const tr = {
     description:
       "Aşağıdaki sekmelere tıklayarak uygulamanın gerçek arayüz modüllerini inceleyebilirsiniz.",
     liveScreenLabel: "Canlı Ekran",
+    autoplayLabelPlaying: "Otomatik Geçiş Aktif",
+    autoplayLabelPaused: "Geçiş Duraklatıldı",
     tabs: [
       {
         id: "planlayici",

@@ -319,6 +319,8 @@ export const en = {
     title: "Every screen is designed to speed up your workflow.",
     description: "Click the tabs below to explore the app's real interface modules.",
     liveScreenLabel: "Live Screen",
+    autoplayLabelPlaying: "Auto-Advance Active",
+    autoplayLabelPaused: "Auto-Advance Paused",
     tabs: [
       {
         id: "planlayici",
