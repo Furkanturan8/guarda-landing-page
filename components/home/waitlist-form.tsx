@@ -7,7 +7,11 @@ export function WaitlistForm({ dict }: { dict: Dictionary["premium"]["waitlist"]
   const [submitted, setSubmitted] = useState(false)
 
   if (submitted) {
-    return <p className="text-sm font-medium text-emerald-700">{dict.successMessage}</p>
+    return (
+      <p className="text-sm font-medium text-pop flex items-center gap-1.5">
+        <span>✓</span> {dict.successMessage}
+      </p>
+    )
   }
 
   return (
@@ -19,13 +23,13 @@ export function WaitlistForm({ dict }: { dict: Dictionary["premium"]["waitlist"]
       }}
     >
       <input
-        className="text-xs px-4 py-2.5 rounded-full border border-neutral-300 focus:border-emerald-700 focus:ring-1 focus:ring-emerald-700 outline-none w-full sm:w-60 bg-white"
+        className="text-xs px-4 py-2.5 rounded-full border border-white/15 bg-white/10 text-white placeholder:text-neutral-400 focus:border-pop focus:ring-1 focus:ring-pop outline-none w-full sm:w-60"
         placeholder={dict.placeholder}
         required
         type="email"
       />
       <button
-        className="text-xs font-semibold px-4 py-2.5 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-colors shrink-0"
+        className="text-xs font-semibold px-4 py-2.5 rounded-full bg-pop text-neutral-950 hover:bg-pop/90 transition-colors shrink-0"
         type="submit"
       >
         {dict.button}
