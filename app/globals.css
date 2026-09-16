@@ -1,33 +1,34 @@
 @import "tailwindcss";
 
-/* Warm paper/ink neutrals + forest-green brand scale (replaces the stock gray/emerald
-   palette everywhere those utilities are already used, without touching every file). */
+/* Warm paper/graphite neutrals + soft sky-indigo brand scale (replaces the stock
+   gray/emerald palette everywhere those utilities are already used, without touching
+   every file). */
 @theme {
-  --color-neutral-50: #fafaf7;
-  --color-neutral-100: #f2f1e9;
-  --color-neutral-200: #e6e4d8;
-  --color-neutral-300: #d2cfbf;
-  --color-neutral-400: #9c9c8e;
-  --color-neutral-500: #74796e;
-  --color-neutral-600: #565d53;
-  --color-neutral-700: #3e453d;
-  --color-neutral-800: #29302a;
-  --color-neutral-900: #1b2119;
-  --color-neutral-950: #12211d;
+  --color-neutral-50: #faf9f6;
+  --color-neutral-100: #f1efea;
+  --color-neutral-200: #e4e1d8;
+  --color-neutral-300: #cfcbbe;
+  --color-neutral-400: #9c978a;
+  --color-neutral-500: #75726a;
+  --color-neutral-600: #57544e;
+  --color-neutral-700: #3f3c37;
+  --color-neutral-800: #292722;
+  --color-neutral-900: #1c1a17;
+  --color-neutral-950: #141310;
 
-  --color-emerald-50: #eef6ec;
-  --color-emerald-100: #dbebd4;
-  --color-emerald-200: #b8d8ac;
-  --color-emerald-300: #93c285;
-  --color-emerald-400: #6da85f;
-  --color-emerald-500: #4c8b42;
-  --color-emerald-600: #2f6d4a;
-  --color-emerald-700: #235537;
-  --color-emerald-800: #1a3f29;
-  --color-emerald-900: #142f1f;
+  --color-emerald-50: #f0f4fd;
+  --color-emerald-100: #dee6fb;
+  --color-emerald-200: #bfd0f6;
+  --color-emerald-300: #97b2ee;
+  --color-emerald-400: #6f93e2;
+  --color-emerald-500: #5379d4;
+  --color-emerald-600: #4463c2;
+  --color-emerald-700: #3850a0;
+  --color-emerald-800: #2e4180;
+  --color-emerald-900: #253566;
 
-  --color-pop: #d7f26c;
-  --color-pop-dim: #f1f8d8;
+  --color-pop: #f7cd6e;
+  --color-pop-dim: #fcefd0;
 }
 
 @theme inline {
@@ -35,8 +36,8 @@
     sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --shadow-subtle-card: 0 1px 3px 0 rgba(18, 33, 29, 0.06), 0 1px 2px -1px rgba(18, 33, 29, 0.06);
-  --shadow-float-window: 0 24px 55px -14px rgba(18, 33, 29, 0.16), 0 0 0 1px rgba(18, 33, 29, 0.06);
+  --shadow-subtle-card: 0 1px 3px 0 rgba(20, 19, 16, 0.06), 0 1px 2px -1px rgba(20, 19, 16, 0.06);
+  --shadow-float-window: 0 24px 55px -14px rgba(20, 19, 16, 0.16), 0 0 0 1px rgba(20, 19, 16, 0.06);
   --shadow-inner-glow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
 
@@ -129,7 +130,7 @@ body {
 }
 
 .badge-soon {
-  background: linear-gradient(90deg, #f1f8d8 0%, #f9fbef 50%, #f1f8d8 100%);
+  background: linear-gradient(90deg, #fcefd0 0%, #fdf7e8 50%, #fcefd0 100%);
   background-size: 200% 100%;
   animation: shimmer 3.2s linear infinite;
 }
@@ -138,10 +139,10 @@ body {
 @keyframes pulseDot {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(47, 109, 74, 0.45);
+    box-shadow: 0 0 0 0 rgba(68, 99, 194, 0.45);
   }
   50% {
-    box-shadow: 0 0 0 5px rgba(47, 109, 74, 0);
+    box-shadow: 0 0 0 5px rgba(68, 99, 194, 0);
   }
 }
 
@@ -158,12 +159,12 @@ body {
   min-width: 2.25rem;
   padding: 0 0.6rem;
   border-radius: 0.5rem;
-  border: 1px solid #d2cfbf;
+  border: 1px solid #cfcbbe;
   background: #fff;
-  box-shadow: 0 2px 0 0 #d2cfbf;
+  box-shadow: 0 2px 0 0 #cfcbbe;
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  color: #12211d;
+  color: #141310;
   animation: keyTap 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
 
@@ -179,14 +180,14 @@ body {
   0%,
   100% {
     transform: none;
-    box-shadow: 0 2px 0 0 #d4d4d4;
+    box-shadow: 0 2px 0 0 #cfcbbe;
     background: #fff;
   }
   3%,
   7% {
     transform: translateY(2px);
-    box-shadow: 0 0 0 0 #d2cfbf;
-    background: #f2f1e9;
+    box-shadow: 0 0 0 0 #cfcbbe;
+    background: #f1efea;
   }
 }
 

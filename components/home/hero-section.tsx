@@ -13,10 +13,10 @@ export function HeroSection({
 }) {
   return (
     <section className="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(#e6e4d8_1px,transparent_1px)] [background-size:24px_24px] opacity-60 -z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#e4e1d8_1px,transparent_1px)] [background-size:24px_24px] opacity-60 -z-10 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-white text-xs font-medium text-neutral-700 shadow-sm mb-6">
+          <div className="justify-self-center inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-white text-xs font-medium text-neutral-700 shadow-sm mb-6">
             <span className="text-neutral-900">✦</span>
             <span>{dict.announcement.text}</span>
             <span className="text-neutral-300">|</span>
@@ -76,9 +76,11 @@ export function HeroSection({
             ))}
           </div>
         </Reveal>
+      </div>
 
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-12">
         <Reveal delay={430}>
-          <div className="mt-14 max-w-6xl mx-auto relative">
+          <div className="mt-14 relative">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-x-10 -top-10 h-52 rounded-full bg-gradient-to-r from-emerald-300/30 via-pop/30 to-emerald-300/30 blur-3xl -z-10"
@@ -86,18 +88,20 @@ export function HeroSection({
             <div className="animate-float">
               <div className="rounded-2xl border border-neutral-300/80 bg-neutral-900/5 p-4 shadow-float-window backdrop-blur-sm overflow-hidden">
                 <div className="rounded-t-xl bg-white border border-neutral-200 overflow-hidden text-left">
-                  <div className="h-10 bg-neutral-50 border-b border-neutral-200 flex items-center px-4 justify-between">
-                    <div className="flex items-center gap-2">
+                  <div className="h-10 bg-neutral-50 border-b border-neutral-200 flex items-center gap-3 px-4">
+                    <div className="flex items-center gap-2 shrink-0">
                       <span className="w-3 h-3 rounded-full bg-red-400/90 inline-block" />
                       <span className="w-3 h-3 rounded-full bg-amber-400/90 inline-block" />
-                      <span className="w-3 h-3 rounded-full bg-emerald-400/90 inline-block" />
+                      <span className="w-3 h-3 rounded-full bg-green-400/90 inline-block" />
                     </div>
-                    <div className="flex items-center justify-center bg-white border border-neutral-200 rounded-md px-4 py-1 text-xs font-mono text-neutral-500 w-64 sm:w-80 shadow-xs">
-                      <span className="text-neutral-400 mr-1.5">🔒</span>
-                      <span className="text-neutral-800">guarda.local</span>
-                      <span className="text-neutral-400">{dict.windowAddressPath}</span>
+                    <div className="flex-1 min-w-0 max-w-64 sm:max-w-80 mx-auto flex items-center justify-center bg-white border border-neutral-200 rounded-md px-4 py-1 text-xs font-mono text-neutral-500 shadow-xs">
+                      <span className="text-neutral-400 mr-1.5 shrink-0">🔒</span>
+                      <span className="truncate">
+                        <span className="text-neutral-800">guarda.local</span>
+                        <span className="text-neutral-400">{dict.windowAddressPath}</span>
+                      </span>
                     </div>
-                    <div className="text-xs font-mono text-neutral-400 hidden sm:block">
+                    <div className="text-xs font-mono text-neutral-400 hidden sm:block shrink-0">
                       {dict.windowOs}
                     </div>
                   </div>
@@ -107,7 +111,7 @@ export function HeroSection({
                       className="object-cover object-top"
                       fill
                       priority
-                      sizes="(min-width: 1280px) 1152px, 100vw"
+                      sizes="(min-width: 1536px) 1496px, 100vw"
                       src={images.planlayici}
                     />
                   </div>

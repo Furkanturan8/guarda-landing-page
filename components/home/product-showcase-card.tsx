@@ -31,7 +31,7 @@ export function ProductShowcaseCard({
         </div>
         <div className="mt-auto pl-6 md:pl-8">
           <div className="relative w-full aspect-[400/254] md:aspect-[584/320] overflow-hidden">
-            <div className="absolute top-0 left-0 w-[165%] md:w-[145%] rounded-tl-2xl border border-neutral-200 bg-white shadow-[0_24px_48px_-20px_rgba(18,33,29,0.32)] overflow-hidden transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:-translate-x-1">
+            <div className="absolute top-0 left-0 w-[165%] md:w-[145%] rounded-tl-2xl border border-neutral-200 bg-white shadow-[0_24px_48px_-20px_rgba(20,19,16,0.32)] overflow-hidden transition-transform duration-700 ease-out group-hover:-translate-y-1.5 group-hover:-translate-x-1">
               <div className="h-7 bg-neutral-50 border-b border-neutral-200 flex items-center gap-1.5 px-3">
                 <span className="w-2 h-2 rounded-full bg-neutral-300" />
                 <span className="w-2 h-2 rounded-full bg-neutral-300" />

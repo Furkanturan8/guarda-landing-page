@@ -37,16 +37,16 @@ export function ShowcaseTabs({
 
       <div className="max-w-6xl mx-auto rounded-3xl border border-neutral-200 bg-neutral-50/50 p-5 shadow-xl overflow-hidden">
         <div className="rounded-t-2xl bg-white border border-neutral-200 overflow-hidden">
-          <div className="h-10 bg-neutral-50 border-b border-neutral-200 px-4 flex items-center justify-between">
-            <div className="flex items-center gap-2">
+          <div className="h-10 bg-neutral-50 border-b border-neutral-200 px-4 flex items-center gap-3">
+            <div className="flex items-center gap-2 shrink-0">
               <span className="w-2.5 h-2.5 rounded-full bg-neutral-300" />
               <span className="w-2.5 h-2.5 rounded-full bg-neutral-300" />
               <span className="w-2.5 h-2.5 rounded-full bg-neutral-300" />
             </div>
-            <div className="text-[11px] font-mono text-neutral-500 bg-white border border-neutral-200 px-4 py-0.5 rounded">
+            <div className="flex-1 min-w-0 max-w-xs mx-auto text-center truncate text-[11px] font-mono text-neutral-500 bg-white border border-neutral-200 px-4 py-0.5 rounded">
               {active.path}
             </div>
-            <div className="text-[10px] font-mono text-neutral-400">{dict.liveScreenLabel}</div>
+            <div className="text-[10px] font-mono text-neutral-400 shrink-0 hidden sm:block">{dict.liveScreenLabel}</div>
           </div>
           <div key={active.id} className="tab-content active aspect-[2880/1570] w-full bg-neutral-100 relative">
             <Image
