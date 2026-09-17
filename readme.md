@@ -1,33 +1,64 @@
 # Guarda — Landing Page
 
+🔗 **Live:** [https://guarda-three.vercel.app/](https://guarda-three.vercel.app/)
+
+> ℹ️ **Note:** The Chrome Extension is currently submitted and pending review on the Chrome Web Store.
+
 The marketing site for **Guarda**, a bookmark manager and personal planner.
-This repo only contains the public landing page — the actual product
+This repo contains the public landing page — the actual product
 (frontend app, backend API) lives in a separate, private repo. This README
 exists so anyone working on this site (including future-you) understands
 what Guarda *is* without needing access to that other repo.
 
 ## What is Guarda?
 
-> Save → Organize → Plan → Complete
+> **Save → Organize → Plan → Complete**
 
 Guarda solves a simple problem: people save hundreds of links and rarely
 come back to them. It's a bookmark manager where a saved link can optionally
 become an actionable task with a reminder — think *bookmark manager +
 read-later app + lightweight personal planner*, not a Notion/Trello clone.
 
-Core building blocks:
+---
 
-- **Bookmarks** — saved URLs with auto-extracted metadata (title,
-  description, favicon, image, content type: article, video, GitHub repo,
-  job posting, documentation, etc.)
-- **Collections** — user-defined, nestable folders (e.g. `Learning >
-  Backend`)
-- **Tags** — free-form, independent of collections
-- **Inbox** — a place to dump links without organizing them immediately
-- **Tasks / Planner** — a bookmark can optionally become a task (`Read`,
-  `Watch`, `Apply`, `Research`, …) with a schedule and reminders
-- **AI (Premium)** — suggests tags/categories/summaries, never silently
-  overwrites user organization
+## 📸 App Preview & Core Features
+
+### 1. 📥 Inbox
+A friction-free drop zone to save links on the fly. Drop URLs here throughout the day without stopping to categorize or tag them, then organize them when you have time.
+
+<p align="center">
+  <img src="public/gelenkutusu-en.png" alt="Guarda Inbox" width="850">
+</p>
+
+### 2. 🔖 Bookmarks
+A visual, searchable gallery of all your saved bookmarks. Automatically extracts rich metadata (page title, description, favicon, cover image, and content type: article, video, GitHub repo, documentation, etc.).
+
+<p align="center">
+  <img src="public/bookmarks-en.png" alt="Guarda Bookmarks" width="850">
+</p>
+
+### 3. 📁 Collections
+Structure your workspace with user-defined, nestable folders (e.g. `Learning > Backend`, `Design Inspiration`, `Projects`).
+
+<p align="center">
+  <img src="public/koleksiyonlar-en.png" alt="Guarda Collections" width="850">
+</p>
+
+### 4. 🏷️ Tags
+Fast, multi-dimensional tagging independent of folder hierarchy. Group links across collections for instant filtering.
+
+<p align="center">
+  <img src="public/etiketler-en.png" alt="Guarda Tags" width="850">
+</p>
+
+### 5. 📅 Planner & Tasks
+Turn links into action. Convert any bookmark into a task (`Read`, `Watch`, `Apply`, `Research`, …) with scheduled dates, deadlines, and reminders to ensure you actually follow through.
+
+<p align="center">
+  <img src="public/planlayici-en.png" alt="Guarda Planner" width="850">
+</p>
+
+---
 
 ## Product architecture (context, not part of this repo)
 
@@ -56,8 +87,7 @@ AI features as if they're free).
 landingpage.html   Single static HTML file — the entire site (hero, feature
                     grid, premium teaser section, footer). Tailwind is
                     loaded via the CDN script + inline config, no build step.
-*-tr / *.png        Turkish screenshots (default language)
-*-en.png            English screenshots (mirror the app's TR/EN support)
+public/*.png       Turkish and English screenshots (mirror the app's TR/EN support)
 ```
 
 Notable sections in `landingpage.html` (`id` attributes): `#ozellikler`
