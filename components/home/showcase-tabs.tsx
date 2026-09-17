@@ -76,10 +76,10 @@ export function ShowcaseTabs({
           <button
             key={tab.id}
             className={cn(
-              "inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border transition-all",
+              "items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border transition-all",
               i === activeIndex
-                ? "border-emerald-700 bg-emerald-700 text-white shadow-xs"
-                : "border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50 hover:text-neutral-950",
+                ? "inline-flex border-emerald-700 bg-emerald-700 text-white shadow-xs"
+                : "hidden sm:inline-flex border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50 hover:text-neutral-950",
             )}
             onClick={() => goToIndex(i)}
             type="button"

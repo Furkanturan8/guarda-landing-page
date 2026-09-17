@@ -385,7 +385,7 @@ export const en = {
         {
           heading: "Data Controller",
           paragraphs: [
-            'Under Turkey\'s Law No. 6698 on the Protection of Personal Data ("KVKK") and applicable data protection law, the data controller is [COMPANY/PERSON NAME]. For questions about this notice, contact us at [CONTACT EMAIL].',
+            'Under Turkey\'s Law No. 6698 on the Protection of Personal Data ("KVKK") and applicable data protection law, the data controller is Guarda Bookmark. For questions about this notice, contact us at info@guardabookmark.com.',
           ],
         },
         {
@@ -411,7 +411,7 @@ export const en = {
           heading: "Your Rights",
           paragraphs: [
             "You have the right to learn whether your personal data is processed, request information about it, learn whether it's used consistently with its purpose, know the third parties it's transferred to, request correction of inaccurate data, request its deletion, and request that these actions be notified to any third parties it was transferred to.",
-            "To exercise these rights, write to us at [CONTACT EMAIL].",
+            "To exercise these rights, write to us at info@guardabookmark.com.",
           ],
         },
       ],
@@ -425,13 +425,13 @@ export const en = {
         {
           heading: "Ownership",
           paragraphs: [
-            "The Guarda name, logo, interface design, and the text, images, and screenshots on this website belong to [COMPANY/PERSON NAME] and are protected under applicable intellectual property law.",
+            "The Guarda name, logo, interface design, and the text, images, and screenshots on this website belong to Guarda Bookmark and are protected under applicable intellectual property law.",
           ],
         },
         {
           heading: "Usage Restrictions",
           paragraphs: [
-            "Content on this site may not be reproduced, distributed, or used commercially without prior written permission. The Guarda name and logo may not be used in a way that associates them with another product, service, or piece of content without [COMPANY/PERSON NAME]'s written consent.",
+            "Content on this site may not be reproduced, distributed, or used commercially without prior written permission. The Guarda name and logo may not be used in a way that associates them with another product, service, or piece of content without Guarda Bookmark's written consent.",
           ],
         },
         {
@@ -442,7 +442,7 @@ export const en = {
         },
         {
           heading: "Contact",
-          paragraphs: ["For copyright-related notices or questions, reach us at [CONTACT EMAIL]."],
+          paragraphs: ["For copyright-related notices or questions, reach us at info@guardabookmark.com."],
         },
       ],
     },

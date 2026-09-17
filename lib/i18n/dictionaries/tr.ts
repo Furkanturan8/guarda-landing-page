@@ -385,7 +385,7 @@ export const tr = {
         {
           heading: "Veri Sorumlusu",
           paragraphs: [
-            '6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu [ŞİRKET/KİŞİ ADI]\'dır. Bu metinle ilgili sorularınız için [İLETİŞİM E-POSTA] adresinden bizimle iletişime geçebilirsiniz.',
+            '6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu Guarda Bookmark\'dır. Bu metinle ilgili sorularınız için info@guardabookmark.com adresinden bizimle iletişime geçebilirsiniz.',
           ],
         },
         {
@@ -411,7 +411,7 @@ export const tr = {
           heading: "KVKK Kapsamındaki Haklarınız",
           paragraphs: [
             "KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme, eksik/yanlış işlenmişse düzeltilmesini isteme, silinmesini/yok edilmesini isteme ve bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme haklarına sahipsiniz.",
-            "Bu haklarınızı kullanmak için [İLETİŞİM E-POSTA] adresinden bize yazabilirsiniz.",
+            "Bu haklarınızı kullanmak için info@guardabookmark.com adresinden bize yazabilirsiniz.",
           ],
         },
       ],
@@ -425,13 +425,13 @@ export const tr = {
         {
           heading: "Mülkiyet",
           paragraphs: [
-            "Guarda adı, logosu, arayüz tasarımı, bu web sitesindeki metinler, görseller ve ekran görüntüleri [ŞİRKET/KİŞİ ADI]'na aittir ve ilgili fikri mülkiyet mevzuatı kapsamında korunmaktadır.",
+            "Guarda adı, logosu, arayüz tasarımı, bu web sitesindeki metinler, görseller ve ekran görüntüleri Guarda Bookmark'a aittir ve ilgili fikri mülkiyet mevzuatı kapsamında korunmaktadır.",
           ],
         },
         {
           heading: "Kullanım Kısıtları",
           paragraphs: [
-            "Bu sitedeki içerik önceden yazılı izin alınmaksızın çoğaltılamaz, dağıtılamaz veya ticari amaçla kullanılamaz. Guarda adı ve logosu, [ŞİRKET/KİŞİ ADI]'nın yazılı onayı olmadan başka bir ürün, hizmet veya içerikle ilişkilendirilecek şekilde kullanılamaz.",
+            "Bu sitedeki içerik önceden yazılı izin alınmaksızın çoğaltılamaz, dağıtılamaz veya ticari amaçla kullanılamaz. Guarda adı ve logosu, Guarda Bookmark'ın yazılı onayı olmadan başka bir ürün, hizmet veya içerikle ilişkilendirilecek şekilde kullanılamaz.",
           ],
         },
         {
@@ -443,7 +443,7 @@ export const tr = {
         {
           heading: "İletişim",
           paragraphs: [
-            "Telif hakkı ile ilgili bildirim veya sorularınız için [İLETİŞİM E-POSTA] adresinden bizimle iletişime geçebilirsiniz.",
+            "Telif hakkı ile ilgili bildirim veya sorularınız için info@guardabookmark.com adresinden bizimle iletişime geçebilirsiniz.",
           ],
         },
       ],
