@@ -21,7 +21,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="tr" className={`${manrope.variable} ${jetbrainsMono.variable} scroll-smooth`}>
+    <html
+      className={`${manrope.variable} ${jetbrainsMono.variable} scroll-smooth`}
+      data-scroll-behavior="smooth"
+      lang="tr"
+    >
       <body className="bg-neutral-50 text-neutral-900 selection:bg-pop selection:text-neutral-950">
         {children}
       </body>

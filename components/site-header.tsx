@@ -4,6 +4,7 @@ import { DEMO_URL } from "@/lib/constants"
 import { homePath } from "@/lib/routes"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { LogoMark } from "@/components/logo-mark"
+import { MobileNav } from "@/components/mobile-nav"
 
 const NAV_ANCHORS = ["nasilCalisir", "ozellikler", "premium", "karsilastirma", "ekranlar"] as const
 
@@ -45,7 +46,7 @@ export function SiteHeader({ dict, locale }: { dict: Dictionary["nav"]; locale: 
             <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block dot-live"></span>
             <span>{dict.freeModeBadge}</span>
           </div>
-          <LanguageSwitcher locale={locale} />
+          <LanguageSwitcher className="hidden md:inline-flex" locale={locale} />
           <a
             className="inline-flex items-center justify-center text-xs font-semibold px-4 py-2 rounded-full bg-emerald-700 text-white hover:bg-emerald-800 transition-all shadow-sm hover:shadow active:scale-[0.98]"
             href={DEMO_URL}
@@ -54,6 +55,14 @@ export function SiteHeader({ dict, locale }: { dict: Dictionary["nav"]; locale: 
           >
             {dict.demoCta}
           </a>
+          <MobileNav
+            links={NAV_ANCHORS.map((key) => ({
+              key,
+              label: dict.links[key],
+              href: `${home}${ANCHOR_HREFS[key]}`,
+            }))}
+            locale={locale}
+          />
         </div>
       </div>
     </header>
