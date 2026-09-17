@@ -12,14 +12,18 @@ This repo contains the public landing page — the actual product
 exists so anyone working on this site (including future-you) understands
 what Guarda *is* without needing access to that other repo.
 
-## What is Guarda?
+## About the Project
+
+**Guarda** is a modern, local-first bookmark manager and personal planner designed to solve a ubiquitous problem: saving hundreds of useful links and never looking back at them.
+
+Steering clear of cluttered browser bookmarks and bulky note-taking apps, Guarda focuses on a streamlined workflow:
 
 > **Save → Organize → Plan → Complete**
 
-Guarda solves a simple problem: people save hundreds of links and rarely
-come back to them. It's a bookmark manager where a saved link can optionally
-become an actionable task with a reminder — think *bookmark manager +
-read-later app + lightweight personal planner*, not a Notion/Trello clone.
+- 📥 **Frictionless Capture:** Save articles, videos, GitHub repositories, and tools on the fly via the Chrome Extension or quick inbox.
+- 📁 **Intuitive Organization:** Keep your digital library clutter-free with nested collections and flexible multi-tagging.
+- ⚡ **Turn Links into Action:** Convert any saved link into an actionable task (`Read`, `Watch`, `Research`, `Apply`) with scheduled dates, deadlines, and reminders.
+- 🔒 **Privacy & Local-First:** In the Free tier, your data stays strictly in your browser (`localStorage`); Premium unlocks secure cross-device cloud synchronization and AI-assisted categorization.
 
 ---
 
