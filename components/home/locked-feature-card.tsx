@@ -22,7 +22,7 @@ export function LockedFeatureCard({
     <Reveal>
       <div
         className={cn(
-          "relative p-6 rounded-2xl border bg-white flex flex-col justify-between overflow-hidden group transition-all duration-500 hover:-translate-y-1.5",
+          "relative p-6 rounded-3xl border bg-white flex flex-col justify-between overflow-hidden group transition-all duration-500 hover:-translate-y-1",
           isAmber
             ? "border-neutral-200 hover:border-pop/70 hover:shadow-[0_0_0_4px_rgba(247,205,110,0.18),0_18px_40px_-20px_rgba(20,19,16,0.35)]"
             : "border-neutral-200 hover:border-emerald-300 hover:shadow-[0_0_0_4px_rgba(68,99,194,0.14),0_18px_40px_-20px_rgba(20,19,16,0.35)]",

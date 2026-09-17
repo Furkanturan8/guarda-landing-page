@@ -3,6 +3,7 @@ import type { Locale } from "@/lib/i18n/types"
 import { DEMO_URL } from "@/lib/constants"
 import { homePath } from "@/lib/routes"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { LogoMark } from "@/components/logo-mark"
 
 const NAV_ANCHORS = ["nasilCalisir", "ozellikler", "premium", "karsilastirma", "ekranlar"] as const
 
@@ -22,6 +23,7 @@ export function SiteHeader({ dict, locale }: { dict: Dictionary["nav"]; locale: 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <a className="flex items-center gap-2 group" href={home}>
+            <LogoMark className="w-7 h-7" />
             <span className="text-xl font-bold tracking-tight text-neutral-950 font-sans">
               {dict.brandName}
             </span>

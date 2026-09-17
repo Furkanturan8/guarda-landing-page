@@ -1,16 +1,16 @@
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
 import { DEMO_URL } from "@/lib/constants"
 import { Reveal } from "@/components/reveal"
+import { Eyebrow } from "@/components/eyebrow"
 
 export function FinalCtaSection({ dict }: { dict: Dictionary["finalCta"] }) {
   return (
     <section className="py-20 border-t border-neutral-200 bg-neutral-950 text-white">
       <Reveal>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900 text-xs font-mono text-neutral-400 mb-6">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 dot-live" />
-            <span>{dict.badge}</span>
-          </div>
+          <Eyebrow className="mb-6" dot tone="dark">
+            {dict.badge}
+          </Eyebrow>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white max-w-2xl mx-auto">
             {dict.title}
           </h2>

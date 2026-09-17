@@ -1,14 +1,13 @@
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
 import { DEMO_URL } from "@/lib/constants"
+import { Eyebrow } from "@/components/eyebrow"
 
 export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) {
   return (
     <section className="py-24 border-t border-neutral-200 bg-neutral-50" id="karsilastirma">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs font-mono uppercase tracking-wider text-neutral-600 bg-white border border-neutral-200 px-3 py-1 rounded-full shadow-xs">
-            {dict.badge}
-          </span>
+          <Eyebrow>{dict.badge}</Eyebrow>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight text-neutral-950">{dict.title}</h2>
           <p className="mt-3 text-sm text-neutral-600">{dict.description}</p>
         </div>
@@ -33,12 +32,12 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
               <ul className="space-y-3.5 text-xs text-neutral-700">
                 {dict.free.includedFeatures.map((feature) => (
                   <li key={feature} className="flex items-center gap-2.5">
-                    <span className="text-neutral-900 font-bold">✓</span>
+                    <span className="text-emerald-600 font-bold">✓</span>
                     <span>{feature}</span>
                   </li>
                 ))}
                 {dict.free.excludedFeatures.map((feature) => (
-                  <li key={feature} className="flex items-center gap-2.5 text-neutral-400">
+                  <li key={feature} className="flex items-center gap-2.5 text-neutral-500">
                     <span>✕</span>
                     <span className="line-through">{feature}</span>
                   </li>
@@ -83,13 +82,12 @@ export function ComparisonSection({ dict }: { dict: Dictionary["comparison"] }) 
               </ul>
             </div>
             <div className="mt-8 pt-6 border-t border-neutral-800">
-              <button
-                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-full bg-neutral-800 text-neutral-400 cursor-not-allowed border border-neutral-700"
-                disabled
-                type="button"
+              <a
+                className="w-full inline-flex items-center justify-center text-xs font-semibold py-3 px-4 rounded-full bg-neutral-800 text-neutral-300 border border-neutral-700 hover:bg-neutral-700 hover:text-white transition-colors"
+                href="#premium"
               >
                 {dict.premium.cta}
-              </button>
+              </a>
             </div>
           </div>
         </div>

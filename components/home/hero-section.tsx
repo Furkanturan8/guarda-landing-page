@@ -16,7 +16,7 @@ export function HeroSection({
       <div className="absolute inset-0 bg-[radial-gradient(#e4e1d8_1px,transparent_1px)] [background-size:24px_24px] opacity-60 -z-10 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Reveal>
-          <div className="justify-self-center inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-white text-xs font-medium text-neutral-700 shadow-sm mb-6">
+          <div className="justify-self-center inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 px-3 py-1 rounded-full border border-neutral-200 bg-white text-xs font-medium text-neutral-700 shadow-sm mb-6 max-w-full">
             <span className="text-neutral-900">✦</span>
             <span>{dict.announcement.text}</span>
             <span className="text-neutral-300">|</span>
@@ -95,13 +95,13 @@ export function HeroSection({
                       <span className="w-3 h-3 rounded-full bg-green-400/90 inline-block" />
                     </div>
                     <div className="flex-1 min-w-0 max-w-64 sm:max-w-80 mx-auto flex items-center justify-center bg-white border border-neutral-200 rounded-md px-4 py-1 text-xs font-mono text-neutral-500 shadow-xs">
-                      <span className="text-neutral-400 mr-1.5 shrink-0">🔒</span>
+                      <span className="text-neutral-500 mr-1.5 shrink-0">🔒</span>
                       <span className="truncate">
                         <span className="text-neutral-800">guarda.local</span>
-                        <span className="text-neutral-400">{dict.windowAddressPath}</span>
+                        <span className="text-neutral-500">{dict.windowAddressPath}</span>
                       </span>
                     </div>
-                    <div className="text-xs font-mono text-neutral-400 hidden sm:block shrink-0">
+                    <div className="text-xs font-mono text-neutral-500 hidden sm:block shrink-0">
                       {dict.windowOs}
                     </div>
                   </div>

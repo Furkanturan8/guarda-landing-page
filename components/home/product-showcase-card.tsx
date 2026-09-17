@@ -24,7 +24,7 @@ export function ProductShowcaseCard({
             <span className="text-[11px] font-mono uppercase tracking-wider bg-neutral-100 text-neutral-700 px-2 py-1 rounded border border-neutral-200">
               {eyebrow}
             </span>
-            <span className="text-xs font-mono text-neutral-400">{path}</span>
+            <span className="text-xs font-mono text-neutral-500">{path}</span>
           </div>
           <h3 className="text-xl font-semibold tracking-tight text-neutral-950 mb-2">{title}</h3>
           <p className="text-sm text-neutral-600 leading-relaxed max-w-md">{description}</p>

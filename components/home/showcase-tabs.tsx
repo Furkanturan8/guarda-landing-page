@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
+import { AutoplayProgress } from "@/components/home/autoplay-progress"
 
 const STEP_DURATION_MS = 4200
 const PROGRESS_INTERVAL_MS = 50
@@ -49,42 +50,30 @@ export function ShowcaseTabs({
   return (
     <>
       <div className="mb-6 flex justify-center">
-        <div className="inline-flex items-center gap-3 bg-neutral-50 border border-neutral-200/90 rounded-full px-4 py-1.5 shadow-xs">
-          <button
-            className="flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-700 hover:text-neutral-950 transition-colors"
-            onClick={() => setIsPlaying((p) => !p)}
-            type="button"
-          >
-            <span className="text-emerald-600 text-xs">{isPlaying ? "⏸" : "▶"}</span>
-            <span>{isPlaying ? dict.autoplayLabelPlaying : dict.autoplayLabelPaused}</span>
-          </button>
-          <div className="w-px h-3.5 bg-neutral-200" />
-          <div className="w-24 sm:w-28 bg-neutral-200 rounded-full h-1.5 overflow-hidden">
-            <div
-              className="bg-neutral-900 h-full transition-all duration-100 ease-linear rounded-full"
-              style={{ width: `${Math.min(progress, 100)}%` }}
-            />
-          </div>
-          <span className="text-[11px] font-mono text-neutral-500">
-            {String(activeIndex + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
-          </span>
-        </div>
+        <AutoplayProgress
+          counterLabel={`${String(activeIndex + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`}
+          isPlaying={isPlaying}
+          onToggle={() => setIsPlaying((p) => !p)}
+          pausedLabel={dict.autoplayLabelPaused}
+          playingLabel={dict.autoplayLabelPlaying}
+          progress={progress}
+        />
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+      <div className="flex items-center gap-2 mb-10 overflow-x-auto no-scrollbar px-4 -mx-4 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 sm:mx-0">
         {dict.tabs.map((tab, i) => (
           <button
             key={tab.id}
             className={cn(
-              "items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border transition-all",
+              "inline-flex shrink-0 items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium border transition-all",
               i === activeIndex
-                ? "inline-flex border-emerald-700 bg-emerald-700 text-white shadow-xs"
-                : "hidden sm:inline-flex border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50 hover:text-neutral-950",
+                ? "border-emerald-700 bg-emerald-700 text-white shadow-xs"
+                : "border-neutral-200 bg-white text-neutral-600 hover:bg-neutral-50 hover:text-neutral-950",
             )}
             onClick={() => goToIndex(i)}
             type="button"
           >
-            <span className={cn("font-mono text-[10px]", i === activeIndex ? "text-emerald-200" : "text-neutral-400")}>
+            <span className={cn("font-mono text-[10px]", i === activeIndex ? "text-emerald-200" : "text-neutral-500")}>
               {String(i + 1).padStart(2, "0")}
             </span>
             {tab.label}
@@ -103,7 +92,7 @@ export function ShowcaseTabs({
             <div className="flex-1 min-w-0 max-w-xs mx-auto text-center truncate text-[11px] font-mono text-neutral-500 bg-white border border-neutral-200 px-4 py-0.5 rounded">
               {active.path}
             </div>
-            <div className="text-[10px] font-mono text-neutral-400 shrink-0 hidden sm:block">{dict.liveScreenLabel}</div>
+            <div className="text-[10px] font-mono text-neutral-500 shrink-0 hidden sm:block">{dict.liveScreenLabel}</div>
           </div>
           <div key={active.id} className="tab-content active aspect-[2880/1570] w-full bg-neutral-100 relative">
             <Image

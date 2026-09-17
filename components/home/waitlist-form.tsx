@@ -23,6 +23,7 @@ export function WaitlistForm({ dict }: { dict: Dictionary["premium"]["waitlist"]
       }}
     >
       <input
+        aria-label={dict.title}
         className="text-xs px-4 py-2.5 rounded-full border border-white/15 bg-white/10 text-white placeholder:text-neutral-400 focus:border-pop focus:ring-1 focus:ring-pop outline-none w-full sm:w-60"
         placeholder={dict.placeholder}
         required

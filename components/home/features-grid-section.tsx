@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
 import { Reveal } from "@/components/reveal"
+import { Eyebrow } from "@/components/eyebrow"
 import { ProductShowcaseCard } from "@/components/home/product-showcase-card"
 import { CapabilityCard } from "@/components/home/capability-card"
 import { ExtensionSpotlight } from "@/components/home/extension-spotlight"
@@ -35,10 +36,9 @@ export function FeaturesGridSection({
         <Reveal>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 dot-live" />
+              <Eyebrow className="mb-3" dot tone="accent">
                 {dict.badge}
-              </div>
+              </Eyebrow>
               <h2 className="text-3xl font-bold tracking-tight text-neutral-950 sm:text-4xl max-w-xl">
                 {dict.title}
               </h2>

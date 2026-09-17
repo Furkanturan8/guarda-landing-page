@@ -24,9 +24,9 @@ export function ExtensionSpotlight({ dict }: { dict: Dictionary["extension"] }) 
           <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
             <div className="flex items-center gap-1.5" aria-label="⌥ + ⌘ + G">
               <kbd className="kbd">⌥</kbd>
-              <span className="text-neutral-400 text-xs">+</span>
+              <span className="text-neutral-500 text-xs">+</span>
               <kbd className="kbd">⌘</kbd>
-              <span className="text-neutral-400 text-xs">+</span>
+              <span className="text-neutral-500 text-xs">+</span>
               <kbd className="kbd">G</kbd>
             </div>
             <span className="text-xs text-neutral-500">{dict.shortcutNote}</span>
@@ -34,7 +34,7 @@ export function ExtensionSpotlight({ dict }: { dict: Dictionary["extension"] }) 
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-neutral-600">
             {dict.checklist.map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <span className="text-neutral-900 font-bold">✓</span> {item}
+                <span className="text-emerald-600 font-bold">✓</span> {item}
               </li>
             ))}
           </ul>

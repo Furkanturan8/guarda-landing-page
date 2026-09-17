@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
+import { Eyebrow } from "@/components/eyebrow"
+import { AutoplayProgress } from "@/components/home/autoplay-progress"
 
 const STEP_DURATION_MS = 3800
 const PROGRESS_INTERVAL_MS = 50
@@ -52,30 +54,20 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200/90 text-xs font-mono text-neutral-700 shadow-xs mb-4">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="uppercase tracking-wider">{dict.eyebrow}</span>
-        </div>
+        <Eyebrow className="mb-4" dot tone="neutral">
+          {dict.eyebrow}
+        </Eyebrow>
         <h2 className="text-3xl font-bold tracking-tight text-neutral-950 sm:text-4xl">{dict.title}</h2>
         <p className="mt-3 text-neutral-600 text-sm sm:text-base">{dict.description}</p>
-        <div className="mt-6 inline-flex items-center gap-3 bg-neutral-50 border border-neutral-200/90 rounded-full px-4 py-1.5 shadow-xs">
-          <button
-            className="flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-700 hover:text-neutral-950 transition-colors"
-            onClick={() => setIsPlaying((p) => !p)}
-            type="button"
-          >
-            <span className="text-emerald-600 text-xs">{isPlaying ? "⏸" : "▶"}</span>
-            <span>{isPlaying ? dict.autoplayLabelPlaying : dict.autoplayLabelPaused}</span>
-          </button>
-          <div className="w-px h-3.5 bg-neutral-200" />
-          <div className="w-24 sm:w-28 bg-neutral-200 rounded-full h-1.5 overflow-hidden">
-            <div
-              className="bg-neutral-900 h-full transition-all duration-100 ease-linear rounded-full"
-              style={{ width: `${Math.min(progress, 100)}%` }}
-            />
-          </div>
-          <span className="text-[11px] font-mono text-neutral-500">{currentStep} / 4</span>
-        </div>
+        <AutoplayProgress
+          className="mt-6"
+          counterLabel={`${currentStep} / 4`}
+          isPlaying={isPlaying}
+          onToggle={() => setIsPlaying((p) => !p)}
+          pausedLabel={dict.autoplayLabelPaused}
+          playingLabel={dict.autoplayLabelPlaying}
+          progress={progress}
+        />
       </div>
 
       <div className="relative max-w-5xl mx-auto">
@@ -140,7 +132,12 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                 >
                   {step.description}
                 </p>
-                <div className="mt-3 flex items-center gap-1.5 text-[10px] font-mono text-neutral-400">
+                <div
+                  className={cn(
+                    "mt-3 flex items-center gap-1.5 text-[10px] font-mono",
+                    active ? "text-neutral-400" : "text-neutral-500",
+                  )}
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   <span>{step.footer}</span>
                 </div>
@@ -200,7 +197,7 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                 </p>
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-mono text-neutral-400">{stage.step1.statusLabel}</span>
+                    <span className="text-xs font-mono text-neutral-500">{stage.step1.statusLabel}</span>
                     <span className="text-xs font-mono bg-neutral-50 border border-neutral-200 text-neutral-600 px-2 py-0.5 rounded">
                       {stage.step1.statusValue}
                     </span>
@@ -226,7 +223,7 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                         {stage.articleTitle}
                       </h4>
                       <div className="flex items-center gap-2 mt-1 text-xs font-mono">
-                        <span className="text-neutral-400">{stage.step2.targetFolderLabel}</span>
+                        <span className="text-neutral-500">{stage.step2.targetFolderLabel}</span>
                         <span className="bg-neutral-100 text-neutral-900 font-semibold px-2 py-0.5 rounded border border-neutral-200 flex items-center gap-1">
                           {stage.step2.targetFolder}
                         </span>
@@ -306,7 +303,7 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                       <span className="bg-white border border-neutral-200 px-2 py-0.5 rounded font-semibold text-neutral-900">
                         {stage.step3.durationValue}
                       </span>
-                      <span className="text-neutral-400">→</span>
+                      <span className="text-neutral-500">→</span>
                       <span className="text-emerald-700 font-medium">{stage.step3.durationTarget}</span>
                     </div>
                   </div>
@@ -361,7 +358,7 @@ export function WorkflowSimulator({ dict }: { dict: Dictionary["workflow"] }) {
                   </div>
                 </div>
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
-                  <span className="text-xs font-mono text-neutral-400">{stage.step4.restartHint}</span>
+                  <span className="text-xs font-mono text-neutral-500">{stage.step4.restartHint}</span>
                   <button
                     className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-neutral-900 text-white hover:bg-neutral-800 transition-colors shadow-xs flex items-center gap-1"
                     onClick={() => goToStep(1)}

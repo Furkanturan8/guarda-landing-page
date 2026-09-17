@@ -3,6 +3,7 @@ import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
 import type { Locale } from "@/lib/i18n/types"
 import { DEMO_URL } from "@/lib/constants"
 import { copyrightPath, homePath, privacyPath } from "@/lib/routes"
+import { LogoMark } from "@/components/logo-mark"
 
 export function SiteFooter({
   navDict,
@@ -21,8 +22,10 @@ export function SiteFooter({
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <div className="flex items-center gap-2">
+              <LogoMark className="w-5 h-5" />
               <span className="text-lg font-bold text-neutral-950">{navDict.brandName}</span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 text-neutral-600 border border-neutral-200">
+              <span className="w-px h-3 bg-neutral-300" />
+              <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400">
                 {navDict.brandBadge}
               </span>
             </div>
@@ -45,7 +48,7 @@ export function SiteFooter({
               {footerDict.liveDemo}
             </a>
           </div>
-          <div className="text-xs text-neutral-400 font-mono">{footerDict.copyright}</div>
+          <div className="text-xs text-neutral-500 font-mono">{footerDict.copyright}</div>
         </div>
         <div className="mt-6 pt-6 border-t border-neutral-100 flex flex-wrap items-center gap-4 text-xs text-neutral-500 font-medium">
           <Link className="hover:text-neutral-950 transition-colors" href={privacyPath(locale)}>

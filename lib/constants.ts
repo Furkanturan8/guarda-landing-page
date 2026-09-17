@@ -1,1 +1,1 @@
-export const DEMO_URL = "[DEMO_URL]"
+export const DEMO_URL = "https://guarda-three.vercel.app/"

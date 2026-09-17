@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/lib/i18n/dictionaries/tr"
 import { Reveal } from "@/components/reveal"
+import { Eyebrow } from "@/components/eyebrow"
 import { LockedFeatureCard } from "@/components/home/locked-feature-card"
 import { WaitlistForm } from "@/components/home/waitlist-form"
 
@@ -18,10 +19,9 @@ export function PremiumSection({ dict }: { dict: Dictionary["premium"] }) {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="badge-soon inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200/70 text-xs font-mono text-neutral-700 mb-3 shadow-xs">
-              <span>🔒</span>
-              <span>{dict.badge}</span>
-            </div>
+            <Eyebrow className="badge-soon border-neutral-200/70 text-neutral-700 mb-3" icon="🔒">
+              {dict.badge}
+            </Eyebrow>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-950">{dict.title}</h2>
             <p className="mt-3 text-sm sm:text-base text-neutral-600">{dict.description}</p>
           </div>
