@@ -1,0 +1,431 @@
+import type { Dictionary } from "./tr";
+
+export const en = {
+  meta: {
+    title: "Guarda — Get back to the links you saved",
+    description:
+      "Guarda keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
+    ogLocale: "en_GB",
+  },
+
+  nav: {
+    links: {
+      features: "Features",
+      howItWorks: "How it works",
+      extension: "Extension",
+      premium: "Premium",
+      pricing: "Pricing",
+      faq: "FAQ",
+    },
+    cta: "Demo",
+    newTab: "opens in a new tab",
+  },
+
+  hero: {
+    eyebrow: "Bookmarks · personal planner",
+    title: "Get back to the links you saved.",
+    body: "Guarda keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
+    cta: "Try it now",
+    note: "Free · No sign-up · Your data stays in your browser",
+  },
+
+  demo: {
+    jobSite: "linkedin.com",
+    playPause: "Play / pause",
+    chapters: [
+      { title: "From the browser", cap: "Press ⌘⇧S on any site. The page lands in your inbox." },
+      { title: "From the app", cap: "Or paste the link. The URL is the only required field." },
+      { title: "Inbox", cap: "Title and reading time arrive in the background." },
+      { title: "Organize", cap: "Collections and tags are yours. AI only suggests." },
+      { title: "Plan", cap: "Turn it into a task if you like, and pick a time." },
+      { title: "Weekly plan", cap: "The whole week on one screen. Click a day to see what's on." },
+      { title: "Complete", cap: "It shows up in today's plan. Check it off when you're done." },
+    ],
+    sidebar: {
+      brandSub: "library",
+      quickSave: "Quick Save",
+      today: "Today",
+      inbox: "Inbox",
+      planner: "Planner",
+      bookmarks: "Bookmarks",
+      collections: "All Collections",
+      tags: "Tags",
+      archive: "Archive",
+      quickAccess: "Quick Access",
+      career: "Career",
+      import: "Import",
+      settings: "Settings",
+    },
+    inbox: {
+      title: "Inbox",
+      subtitle: "Things you saved but haven't put in a collection or planned yet.",
+      all: "All",
+      article: "Article",
+      job: "Job",
+      queued: "Queued, will be processed shortly",
+      analyzing: "Analyzing content · fetching metadata",
+      wait: "Please wait",
+      justAdded: "just added",
+      fromExtension: "just added · from extension",
+      daysAgo: "added 3 days ago",
+      readTime: "{n} min read",
+      accept: "Accept",
+      openLink: "Open Link",
+      move: "Move to Collection",
+      toTask: "Make a Task",
+    },
+    planner: {
+      title: "Planner",
+      today: "Today",
+      upcoming: "Upcoming (4)",
+      calendar: "Calendar",
+      completed: "Completed",
+      evening: "Evening",
+      read: "read",
+      apply: "apply",
+      min: "min",
+      weekRange: "28 September – 4 October 2026",
+      month: "September 2026",
+      days: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      todaySuffix: "(Today)",
+      onePlan: "1 Plan",
+      empty: "Free",
+      noPlan: "No plans",
+      add: "+ Add",
+      total: "Planned",
+      done: "Done",
+      left: "Left",
+      notes: "Selected Day",
+      wedDate: "Wednesday, 30 September 2026",
+      thuDate: "Thursday, 1 October 2026",
+      addToDay: "Add a Task to This Day",
+      rhythm: "Weekly Rhythm",
+      plans: "8 Plans",
+      completedLabel: "Completed:",
+      ratio: "2 / 8 (25%)",
+    },
+    dashboard: {
+      eyebrow: "Daily Workspace",
+      title: "What do you want to work on today?",
+      summary: "{n} actions waiting to be done, 2 new items in your inbox.",
+      todayActions: "Today's Actions (3)",
+      byPriority: "By Priority",
+      deadline: "due tonight 23:59",
+      inboxPool: "Inbox",
+      inboxPoolBody: "2 new items are waiting to be organized.",
+      goInbox: "Go to Inbox",
+    },
+    capture: {
+      title: "Save now. Sort later.",
+      urlLabel: "URL · the only required field",
+      details: "Add details — collection, tags, note, task",
+      hint: "⌘↵ to save · Esc to close",
+      saved: "Saved",
+      save: "Save to Inbox",
+    },
+    task: {
+      title: "New Task",
+      action: "Action",
+      date: "Date",
+      time: "Time",
+      read: "Read",
+      today: "Today",
+      reminder: "Reminder",
+      reminderMeta: "30 min before · In-app",
+      cancel: "Cancel",
+      save: "Save Task",
+    },
+    web: { codeSample: "code sample" },
+    toast: {
+      saving: "Saving…",
+      saved: "Saved ✓",
+      tagsPlaceholder: "tag1, tag2",
+      tagsTyped: "golang, concurrency",
+      inbox: "Inbox",
+      keys: "Enter: save · Esc: cancel",
+    },
+  },
+
+  problem: {
+    title: "Saving is easy. Getting back is hard.",
+    before: "Until now",
+    after: "With Guarda",
+    rows: [
+      {
+        before: "The link sits in an open tab, until one day the tab gets closed.",
+        after: "The link lands in your inbox. Its title and reading time fill in by themselves.",
+      },
+      {
+        before: "Every open tab eats memory; a single tab can hold hundreds of MB.",
+        after: "A saved link takes up next to no space. Close the tab without a second thought.",
+      },
+      {
+        before: "A week later you can't remember why you saved it.",
+        after: "The one-line note you wrote stays next to it. Nobody changes it.",
+      },
+      {
+        before: "The “I'll read it later” moment never comes.",
+        after: "You pick a time to read it. When it comes, Guarda reminds you.",
+      },
+    ],
+  },
+
+  screens: {
+    title: "From inside the app.",
+    body: "Real screens with sample data. All of it is in the free version, no sign-up needed.",
+    items: [
+      {
+        eyebrow: "Tasks & calendar",
+        path: "/planner",
+        title: "Tasks and planner",
+        body: "Turn a bookmark into a task: read, watch, apply. Plan it with a time on the weekly calendar or in the Today panel.",
+        image: "/screens/planner-en.png",
+        alt: "Planner: weekly calendar and the selected day's tasks",
+      },
+      {
+        eyebrow: "Hierarchy",
+        path: "/collections",
+        title: "Collections and sub-folders",
+        body: "Build nested folders like Learning › Backend. See sub-collections and how many links they hold at a glance.",
+        image: "/screens/collections-en.png",
+        alt: "Collections: folder tree and sub-collection previews",
+      },
+      {
+        eyebrow: "Quick capture",
+        path: "/inbox",
+        title: "Inbox",
+        body: "Save first, decide later. Move what's waiting into a collection, or turn it into a task in one click.",
+        image: "/screens/inbox-en.png",
+        alt: "Inbox: unsorted bookmarks and quick actions",
+      },
+      {
+        eyebrow: "List",
+        path: "/bookmarks",
+        title: "Every bookmark in one list",
+        body: "Type, collection, tags and date side by side. Search from anywhere with ⌘K, filter by collection or tag.",
+        image: "/screens/bookmarks-en.png",
+        alt: "Bookmarks: filterable table view",
+      },
+      {
+        eyebrow: "Tags",
+        path: "/tags",
+        title: "Tags",
+        body: "Sort your tags by how often you use them and rename them. Clear out the ones no bookmark uses in one click.",
+        image: "/screens/tags-en.png",
+        alt: "Tags: tag list with usage counts and the selected tag's bookmarks",
+      },
+    ],
+  },
+
+  tryFree: {
+    title: "Go ahead, trying it is free.",
+    body: "Open it, poke around, save your own links. No account, no card details.",
+    cta: "Open the demo",
+    newTab: "opens in a new tab",
+    points: {
+      noSignup: {
+        title: "No sign-up",
+        body: "No email, password or card. You start using it the moment it opens.",
+      },
+      local: {
+        title: "Your data stays in your browser",
+        body: "In the free version your bookmarks are stored in this browser, not on our servers.",
+      },
+      noLimit: {
+        title: "No time limit",
+        body: "There's no trial to run out. It opens with sample data; switch to your own whenever you like.",
+      },
+    },
+    exportNote: "Changed your mind? Export your bookmarks as JSON anytime.",
+  },
+
+  capture: {
+    title: "Just the URL. The rest can wait.",
+    body: "Title, description and reading time are fetched in the background. Collections, tags and notes are there if you want them. None of them are required.",
+    urlLabel: "URL · the only required field",
+    collection: "Collection",
+    tags: "Tags",
+    reason: "Why are you saving this?",
+    reasonHint: "optional, always yours",
+    reasonText: "Needed for query optimization in the reporting service.",
+    makeTask: "Make this a task too",
+    shortcut: "⌘↵ to save · Esc to close",
+    save: "Save to Inbox",
+  },
+
+  organize: {
+    title: "Your organization, your rules.",
+    body: "Nested collections, as many tags as you like. If Guarda suggests something, you see it as a suggestion. Nothing changes unless you accept it.",
+    accept: "Accept",
+    reject: "Reject",
+  },
+
+  plan: {
+    title: "Today's plan, from what you saved.",
+    body: "Open Guarda and what you need to read, watch or apply to today is right there, in order. Overdue items come first.",
+    note: "It's not a project management tool. It's just for getting back to the things you saved.",
+    late: "overdue",
+    items: [
+      { time: "Yesterday", action: "research", title: "Redis Streams", meta: "redis.io", late: true, done: false },
+      {
+        time: "09:00",
+        action: "read",
+        title: "PostgreSQL Indexing",
+        meta: "use-the-index-luke.com · 18 min",
+        late: false,
+        done: true,
+      },
+      { time: "14:00", action: "read", title: "Go Concurrency Patterns", meta: "go.dev · 12 min", late: false, done: false },
+      { time: "19:30", action: "apply", title: "Junior Backend Developer", meta: "linkedin.com", late: false, done: false },
+    ],
+  },
+
+  extras: {
+    extensionTitle: "Browser extension",
+    extensionBody:
+      "Press ⌘⇧S on any site and the page lands in your inbox. Pick its tags or collection right there. Anything you save while Guarda is closed waits in the extension and moves over when you open the app.",
+    typesTitle: "Save anything",
+    typesBody: "Guarda works out what kind of link it is. If it gets it wrong, you change it.",
+    types: ["Article", "Video", "GitHub", "Product", "Job", "Documentation", "Social", "Website"],
+  },
+
+  suggestions: {
+    title: "Guarda suggests. You decide.",
+    subtitle: "With Premium, for 500 bookmarks a month. It doesn't write text; it only picks among options.",
+    label: "Suggestion · PostgreSQL Indexing",
+    text: "This page looks like a fit for your Learning / Backend collection. Suggested tags: postgresql, indexing. Suggested task: read.",
+    accept: "Accept",
+    edit: "Edit",
+    reject: "Reject",
+  },
+
+  premium: {
+    title: "With Premium, your archive goes where you go.",
+    body: "The free version keeps everything in this browser. Premium moves your archive to the cloud and takes on a few more jobs so nothing you saved gets lost.",
+    features: {
+      cloud: {
+        title: "Cloud backup & every device",
+        body: "Your archive lives in the cloud instead of the browser. It survives clearing browser data, and it's the same archive on every device you sign in on.",
+      },
+      suggestions: {
+        title: "Smart suggestions",
+        body: "A collection, tags and a task suggested for every bookmark. Nothing changes until you accept. 500 bookmarks a month.",
+      },
+      pageCopy: {
+        title: "Page copies and full-text search",
+        body: "A text copy of every page you save is kept. Search looks inside the page as well as the title, and the content is yours even if the link dies.",
+      },
+      linkCheck: {
+        title: "Dead link scan",
+        body: "Your links are checked regularly. A page that disappears gets flagged, with the Internet Archive's copy right there.",
+      },
+      calendar: {
+        title: "Calendar feed",
+        body: "Your planned tasks show up in Google, Apple or Outlook Calendar. Reset or turn off the feed address whenever you like.",
+      },
+      import: {
+        title: "Import",
+        body: "Bring in browser bookmarks and your Pocket, Raindrop.io and Instapaper saves. Tags and notes come along too.",
+      },
+    },
+  },
+
+  pricing: {
+    title: "Start free. Move to the cloud when you want.",
+    body: "There's no trial, because the free version already works in full. When you upgrade, the bookmarks and tasks in this browser move to the cloud without losing a thing.",
+    plans: {
+      intervalLabel: "Billing period",
+      monthly: "Monthly",
+      yearly: "Yearly",
+      yearlySaving: "2 months free",
+      free: {
+        name: "Free",
+        price: "$0",
+        note: "No time limit",
+        items: [
+          "Bookmarks, collections, tags and tasks",
+          "Daily plan and weekly calendar",
+          "Browser extension",
+          "Data stays in this browser, no sign-up",
+          "JSON export",
+        ],
+        cta: "Try it now",
+      },
+      premium: {
+        name: "Premium",
+        prices: {
+          monthly: { amount: "$5", unit: "/ month", note: "Billed monthly" },
+          yearly: { amount: "$50", unit: "/ year", note: "2 months free" },
+        },
+        items: [
+          "Everything in Free",
+          "Cloud backup, every device, unlimited capacity",
+          "Smart suggestions, 500 bookmarks a month",
+          "Page copies and full-text search",
+          "Dead link scan, with the Internet Archive's copy",
+          "Calendar feed and import",
+        ],
+        cta: "Upgrade to Premium",
+        footnote: "Payments via Polar · Cancel anytime",
+      },
+    },
+    compare: {
+      title: "Free vs Premium",
+      feature: "Feature",
+      free: "Free",
+      premium: "Premium",
+      yes: "Included",
+      no: "Not included",
+      rows: [
+        { label: "Bookmarks, collections, tags, tasks and planner", free: true, premium: true },
+        { label: "Browser extension", free: true, premium: true },
+        { label: "Where your data lives", free: "This browser", premium: "Cloud" },
+        { label: "Capacity", free: "Browser quota", premium: "Unlimited" },
+        { label: "Access from every device", free: false, premium: true },
+        { label: "Smart suggestions", free: false, premium: "500 / month" },
+        { label: "Calendar feed (ICS)", free: false, premium: true },
+        { label: "Page copies and full-text search", free: false, premium: true },
+        { label: "Dead link scan", free: false, premium: true },
+        { label: "Import", free: false, premium: true },
+        { label: "JSON export", free: true, premium: true },
+      ],
+    },
+  },
+
+  faq: {
+    title: "Questions",
+    items: [
+      {
+        q: "Do I need an account?",
+        a: "No. The free version works without signing up and keeps your data in this browser. You only need an account for Premium.",
+      },
+      {
+        q: "Is there a free trial?",
+        a: "No. The free version takes its place: saving, organizing and planning are all available with no time limit.",
+      },
+      {
+        q: "What happens to my local bookmarks when I upgrade?",
+        a: "Once your payment is confirmed, the bookmarks and tasks in this browser move to the cloud. Nothing is lost.",
+      },
+      {
+        q: "What if I cancel?",
+        a: "Premium stays on until the end of the period you paid for. After that your cloud archive is kept for a while; you can move it back into this browser and carry on with the free version, or download it as JSON or HTML.",
+      },
+      {
+        q: "How are payments handled?",
+        a: "Payments go through Polar. Your card details never reach Guarda's servers. You manage or cancel your subscription on Polar's page.",
+      },
+      {
+        q: "What gets sent for smart suggestions?",
+        a: "Only the page's title, description and address go to the classification service. No text is generated, and your collections, tags and tasks don't change until you accept a suggestion.",
+      },
+    ],
+  },
+
+  footer: {
+    title: "Start finishing what you saved.",
+    cta: "Try it now",
+    note: "No sign-up, no setup. Your data stays in this browser; later, Premium can move it to the cloud and onto every device.",
+    soon: "Coming soon: email reminders",
+  },
+} satisfies Dictionary;

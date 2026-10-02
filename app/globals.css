@@ -1,118 +1,31 @@
 @import "tailwindcss";
 
-/* Warm paper/graphite neutrals + soft sky-indigo brand scale (replaces the stock
-   gray/emerald palette everywhere those utilities are already used, without touching
-   every file). */
 @theme {
-  --color-neutral-50: #faf9f6;
-  --color-neutral-100: #f1efea;
-  --color-neutral-200: #e4e1d8;
-  --color-neutral-300: #cfcbbe;
-  --color-neutral-400: #9c978a;
-  --color-neutral-500: #75726a;
-  --color-neutral-600: #57544e;
-  --color-neutral-700: #3f3c37;
-  --color-neutral-800: #292722;
-  --color-neutral-900: #1c1a17;
-  --color-neutral-950: #141310;
+  --font-sans: var(--font-instrument-sans), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 
-  --color-emerald-50: #f0f4fd;
-  --color-emerald-100: #dee6fb;
-  --color-emerald-200: #bfd0f6;
-  --color-emerald-300: #97b2ee;
-  --color-emerald-400: #6f93e2;
-  --color-emerald-500: #5379d4;
-  --color-emerald-600: #4463c2;
-  --color-emerald-700: #3850a0;
-  --color-emerald-800: #2e4180;
-  --color-emerald-900: #253566;
+  --color-ink: #0a0a0a;
+  --color-ink-soft: #171717;
+  --color-ink-hover: #262626;
+  --color-body: #525252;
+  --color-muted: #737373;
+  --color-faint: #a1a1a1;
+  --color-line: #e5e5e5;
+  --color-line-soft: #efefef;
+  --color-wash: #f5f5f5;
+  --color-paper: #fafafa;
+  /* Warm off-white for alternating bands, so long stretches of the page aren't all pure white. */
+  --color-sand: #f6f4ef;
+  --color-sand-line: #e9e5dc;
 
-  --color-pop: #f7cd6e;
-  --color-pop-dim: #fcefd0;
+  --animate-rise: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-open: rise 0.35s ease-out both;
 }
 
-@theme inline {
-  --font-sans: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
-
-  --shadow-subtle-card: 0 1px 3px 0 rgba(20, 19, 16, 0.06), 0 1px 2px -1px rgba(20, 19, 16, 0.06);
-  --shadow-float-window: 0 24px 55px -14px rgba(20, 19, 16, 0.16), 0 0 0 1px rgba(20, 19, 16, 0.06);
-  --shadow-inner-glow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-body {
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Horizontally scrollable chip rows (mobile tab lists) without a visible scrollbar */
-.no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hero window float */
-@keyframes floatSlow {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-.animate-float {
-  animation: floatSlow 6s ease-in-out infinite;
-}
-
-/* Scroll reveal — elements fade & rise into view once (see components/reveal.tsx) */
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(22px);
-  transition:
-    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--d, 0ms);
-  will-change: opacity, transform;
-}
-
-[data-reveal].is-in {
-  opacity: 1;
-  transform: none;
-}
-
-.stagger > [data-reveal]:nth-child(2) {
-  --d: 100ms;
-}
-
-.stagger > [data-reveal]:nth-child(3) {
-  --d: 200ms;
-}
-
-.stagger > [data-reveal]:nth-child(4) {
-  --d: 300ms;
-}
-
-.stagger > [data-reveal]:nth-child(5) {
-  --d: 400ms;
-}
-
-.stagger > [data-reveal]:nth-child(6) {
-  --d: 500ms;
-}
-
-/* Showcase tab switch */
-@keyframes tabIn {
+@keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -120,144 +33,46 @@ body {
   }
 }
 
-.tab-content {
-  display: none;
+/*
+Scroll reveal. `.js` is set by an inline script before first paint, so without
+JavaScript nothing is hidden. RevealObserver adds `.is-visible`; `--i` staggers
+siblings by 70ms.
+*/
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
 }
 
-.tab-content.active {
-  display: block;
-  animation: tabIn 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
 }
 
-/* Premium "coming soon" shimmer */
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.badge-soon {
-  background: linear-gradient(90deg, #fcefd0 0%, #fdf7e8 50%, #fcefd0 100%);
-  background-size: 200% 100%;
-  animation: shimmer 3.2s linear infinite;
-}
-
-/* Live status dot pulse */
-@keyframes pulseDot {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(68, 99, 194, 0.45);
-  }
-  50% {
-    box-shadow: 0 0 0 5px rgba(68, 99, 194, 0);
-  }
-}
-
-.dot-live {
-  animation: pulseDot 2.2s ease-out infinite;
-}
-
-/* Browser extension spotlight: keys get pressed, popup appears, loops every 6s */
-.kbd {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.25rem;
-  min-width: 2.25rem;
-  padding: 0 0.6rem;
-  border-radius: 0.5rem;
-  border: 1px solid #cfcbbe;
+body {
   background: #fff;
-  box-shadow: 0 2px 0 0 #cfcbbe;
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  color: #141310;
-  animation: keyTap 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
-}
-
-.kbd:nth-child(3) {
-  animation-delay: 0.12s;
-}
-
-.kbd:nth-child(5) {
-  animation-delay: 0.24s;
-}
-
-@keyframes keyTap {
-  0%,
-  100% {
-    transform: none;
-    box-shadow: 0 2px 0 0 #cfcbbe;
-    background: #fff;
-  }
-  3%,
-  7% {
-    transform: translateY(2px);
-    box-shadow: 0 0 0 0 #cfcbbe;
-    background: #f1efea;
-  }
-}
-
-.ext-popup {
-  animation: extPop 6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
-}
-
-@keyframes extPop {
-  0%,
-  7% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(12px) scale(0.96);
-  }
-  13%,
-  86% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-  93%,
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(6px) scale(0.98);
-  }
-}
-
-.ext-saved {
-  animation: extSaved 6s ease-out infinite;
-}
-
-@keyframes extSaved {
-  0%,
-  20% {
-    opacity: 0;
-    transform: translateX(6px);
-  }
-  28%,
-  86% {
-    opacity: 1;
-    transform: none;
-  }
-  93%,
-  100% {
-    opacity: 0;
-  }
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-reveal] {
+  html {
+    scroll-behavior: auto;
+  }
+  .js [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;
   }
-
-  .animate-float,
-  .badge-soon,
-  .dot-live,
-  .tab-content.active,
-  .kbd,
-  .ext-popup,
-  .ext-saved {
+  .animate-rise,
+  .animate-open {
     animation: none;
   }
 }
