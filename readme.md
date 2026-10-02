@@ -2,7 +2,7 @@
 
 🔗 **Live Link For Free Demo:** [https://guarda-three.vercel.app/](https://guarda-three.vercel.app/)
 
-🔗 **Live Link For Landing Page:** https://furkanturan8.github.io/guarda-landing-page/
+🔗 **Live Link For Landing Page:** [https://guarda-landing-page.vercel.app/](https://guarda-landing-page.vercel.app/)
 
 > ℹ️ **Note:** The Chrome Extension is currently submitted and pending review on the Chrome Web Store.
 
