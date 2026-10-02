@@ -426,6 +426,5 @@ export const en = {
     title: "Start finishing what you saved.",
     cta: "Try it now",
     note: "No sign-up, no setup. Your data stays in this browser; later, Premium can move it to the cloud and onto every device.",
-    soon: "Coming soon: email reminders",
   },
 } satisfies Dictionary;

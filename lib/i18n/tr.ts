@@ -427,7 +427,6 @@ export const tr = {
     title: "Kaydettiklerini bitirmeye başla.",
     cta: "Hemen dene",
     note: "Kayıt yok, kurulum yok. Verilerin bu tarayıcıda kalır; istersen sonra Premium ile buluta taşır, her cihazdan erişirsin.",
-    soon: "Yakında: E-posta hatırlatıcıları",
   },
 };
 

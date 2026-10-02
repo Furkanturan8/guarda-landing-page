@@ -35,7 +35,6 @@ export function Footer({ t, links }: { t: Dictionary["footer"]; links: Dictionar
                 {l.label}
               </a>
             ))}
-            <span>{t.soon}</span>
           </div>
           <span className="font-mono text-[11px] tracking-[.08em]">© 2026 GuardaFlow</span>
         </div>
