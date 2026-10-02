@@ -3,7 +3,7 @@
 import { Check } from "lucide-react";
 import { useState } from "react";
 import type { Dictionary } from "@/lib/i18n";
-import { APP_URL, upgradeUrl, type BillingInterval } from "@/lib/site";
+import { APP_URL, type BillingInterval } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Arrow, reveal } from "./primitives";
 
@@ -82,12 +82,14 @@ export function PlanCards({ t }: { t: Dictionary["pricing"]["plans"] }) {
           </div>
           <div className="mt-2 text-[13px] text-faint">{price.note}</div>
           <Features items={t.premium.items} iconClass="text-faint" />
-          <a
-            href={upgradeUrl(interval)}
-            className="group mt-8 flex h-11 items-center justify-center gap-2 rounded-[10px] bg-paper text-[15px] font-medium text-ink transition-colors hover:bg-line"
+          <button
+            type="button"
+            disabled
+            aria-disabled="true"
+            className="mt-8 flex h-11 w-full cursor-default items-center justify-center rounded-[10px] border border-white/15 bg-white/10 text-[14.5px] font-medium text-paper/80 select-none"
           >
-            {t.premium.cta} <Arrow />
-          </a>
+            {t.premium.cta}
+          </button>
           <div className="mt-3 text-center text-[12.5px] text-faint">{t.premium.footnote}</div>
         </div>
       </div>

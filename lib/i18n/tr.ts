@@ -365,8 +365,8 @@ export const tr = {
           "Ölü bağlantı taraması, Internet Archive kopyası",
           "Takvim beslemesi ve içe aktarma",
         ],
-        cta: "Premium'a Yükselt",
-        footnote: "Ödeme Polar üzerinden · İstediğin zaman iptal",
+        cta: "Çok Yakında",
+        footnote: "Premium özellikler çok yakında kullanıma sunulacak",
       },
     },
     compare: {

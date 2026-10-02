@@ -365,8 +365,8 @@ export const en = {
           "Dead link scan, with the Internet Archive's copy",
           "Calendar feed and import",
         ],
-        cta: "Upgrade to Premium",
-        footnote: "Payments via Polar · Cancel anytime",
+        cta: "Coming Soon",
+        footnote: "Premium features will be available soon",
       },
     },
     compare: {
