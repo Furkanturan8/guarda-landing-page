@@ -23,7 +23,7 @@ export function Navbar({ t, locale }: { t: Dictionary["nav"]; locale: Locale }) 
       <div className="mx-auto grid h-15 max-w-[1200px] grid-cols-[1fr_auto] items-center gap-4 px-4 sm:px-8 lg:grid-cols-[1fr_auto_1fr]">
         <a href="#top" className="flex items-center gap-[9px]">
           <LogoBadge />
-          <span className="text-lg font-semibold tracking-[-.02em]">Guarda</span>
+          <span className="text-lg font-semibold tracking-[-.02em]">GuardaFlow</span>
         </a>
         <div className="hidden gap-6 text-sm lg:flex">
           {sectionLinks(t.links).map((l) => (

@@ -2,9 +2,9 @@ export type Cell = boolean | string;
 
 export const tr = {
   meta: {
-    title: "Guarda — Kaydettiğin linke geri dön",
+    title: "GuardaFlow — Kaydettiğin linke geri dön",
     description:
-      "Guarda kaydettiğin her şeyi tek yerde toplar. İstersen onu bir göreve çevirir, zamanı gelince sana hatırlatır.",
+      "GuardaFlow kaydettiğin her şeyi tek yerde toplar. İstersen onu bir göreve çevirir, zamanı gelince sana hatırlatır.",
     ogLocale: "tr_TR",
   },
 
@@ -24,7 +24,7 @@ export const tr = {
   hero: {
     eyebrow: "Bookmark · kişisel planlayıcı",
     title: "Kaydettiğin linke geri dön.",
-    body: "Guarda kaydettiğin her şeyi tek yerde toplar. İstersen onu bir göreve çevirir, zamanı gelince sana hatırlatır.",
+    body: "GuardaFlow kaydettiğin her şeyi tek yerde toplar. İstersen onu bir göreve çevirir, zamanı gelince sana hatırlatır.",
     cta: "Hemen dene",
     note: "Ücretsiz · Kayıt gerekmez · Verilerin tarayıcında kalır",
   },
@@ -149,7 +149,7 @@ export const tr = {
   problem: {
     title: "Kaydetmek kolay. Geri dönmek zor.",
     before: "Şimdiye kadar",
-    after: "Guarda ile",
+    after: "GuardaFlow ile",
     rows: [
       {
         before: "Link bir sekmede açık kalır, sonra bir gün kapanır.",
@@ -165,7 +165,7 @@ export const tr = {
       },
       {
         before: "“Sonra okurum” dediğin o an hiç gelmez.",
-        after: "Okumak için bir saat seçersin. Zamanı gelince Guarda hatırlatır.",
+        after: "Okumak için bir saat seçersin. Zamanı gelince GuardaFlow hatırlatır.",
       },
     ],
   },
@@ -255,14 +255,14 @@ export const tr = {
 
   organize: {
     title: "Düzen senin.",
-    body: "İç içe koleksiyonlar, istediğin kadar etiket. Guarda bir öneri yaparsa onu öneri olarak görürsün. Kabul etmediğin hiçbir şey değişmez.",
+    body: "İç içe koleksiyonlar, istediğin kadar etiket. GuardaFlow bir öneri yaparsa onu öneri olarak görürsün. Kabul etmediğin hiçbir şey değişmez.",
     accept: "Kabul et",
     reject: "Reddet",
   },
 
   plan: {
     title: "Günün planı, kaydettiklerinden.",
-    body: "Guarda'yı açtığında bugün okuman, izlemen ya da başvurman gerekenler sırayla karşında. Süresi geçenler en üstte.",
+    body: "GuardaFlow'u açtığında bugün okuman, izlemen ya da başvurman gerekenler sırayla karşında. Süresi geçenler en üstte.",
     note: "Bir proje yönetim aracı değil. Sadece kaydettiğin şeylere geri dönmen için.",
     late: "gecikti",
     items: [
@@ -283,14 +283,14 @@ export const tr = {
   extras: {
     extensionTitle: "Tarayıcı eklentisi",
     extensionBody:
-      "Herhangi bir sitede ⌘⇧S'ye bas, sayfa gelen kutuna düşer. Etiketini ya da koleksiyonunu o an seçebilirsin. Guarda kapalıyken kaydettiklerin eklentide bekler, uygulamayı açınca aktarılır.",
+      "Herhangi bir sitede ⌘⇧S'ye bas, sayfa gelen kutuna düşer. Etiketini ya da koleksiyonunu o an seçebilirsin. GuardaFlow kapalıyken kaydettiklerin eklentide bekler, uygulamayı açınca aktarılır.",
     typesTitle: "Ne kaydedersen kaydet",
-    typesBody: "Linkin türünü Guarda kendisi anlar. Yanlış anlarsa değiştirirsin.",
+    typesBody: "Linkin türünü GuardaFlow kendisi anlar. Yanlış anlarsa değiştirirsin.",
     types: ["Makale", "Video", "GitHub", "Ürün", "İlan", "Dokümantasyon", "Sosyal", "Web Sitesi"],
   },
 
   suggestions: {
-    title: "Guarda öneri yapar. Kararı sen verirsin.",
+    title: "GuardaFlow öneri yapar. Kararı sen verirsin.",
     subtitle: "Premium'da, ayda 500 kayıt için. Metin üretmez; yalnızca seçenekler arasından önerir.",
     label: "Öneri · PostgreSQL Indexing",
     text: "Bu sayfa Learning / Backend koleksiyonuna uygun görünüyor. Etiket önerisi: postgresql, indexing. Görev önerisi: oku.",
@@ -414,7 +414,7 @@ export const tr = {
       },
       {
         q: "Ödeme nasıl alınıyor?",
-        a: "Ödemeler Polar üzerinden alınır. Kart bilgilerin Guarda sunucularına hiç gelmez. Aboneliğini yine Polar'ın sayfasından yönetir ya da iptal edersin.",
+        a: "Ödemeler Polar üzerinden alınır. Kart bilgilerin GuardaFlow sunucularına hiç gelmez. Aboneliğini yine Polar'ın sayfasından yönetir ya da iptal edersin.",
       },
       {
         q: "Akıllı öneriler için ne gönderiliyor?",

@@ -292,7 +292,7 @@ export function DemoFilm({ t }: { t: DemoText }) {
                 <span className="flex size-4 shrink-0 items-center justify-center rounded bg-ink-soft text-paper">
                   <LogoMark className="size-[62%]" check={null} />
                 </span>
-                <span>Guarda</span>
+                <span>GuardaFlow</span>
               </div>
             </div>
             <div className="flex h-10 items-center gap-3 bg-white px-3.5">
@@ -323,7 +323,7 @@ export function DemoFilm({ t }: { t: DemoText }) {
                   <LogoMark className="size-[60%]" />
                 </span>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[22px] leading-none font-semibold tracking-[-.02em]">Guarda</span>
+                  <span className="text-[22px] leading-none font-semibold tracking-[-.02em]">GuardaFlow</span>
                   <span className="font-mono text-[9px] tracking-[.16em] text-ink/50 uppercase">
                     {t.sidebar.brandSub}
                   </span>

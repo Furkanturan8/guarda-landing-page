@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: t.description,
       locale: t.ogLocale,
       url: localePath(locale),
-      siteName: "Guarda",
+      siteName: "GuardaFlow",
       type: "website",
     },
   };

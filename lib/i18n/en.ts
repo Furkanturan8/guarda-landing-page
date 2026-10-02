@@ -2,9 +2,9 @@ import type { Dictionary } from "./tr";
 
 export const en = {
   meta: {
-    title: "Guarda — Get back to the links you saved",
+    title: "GuardaFlow — Get back to the links you saved",
     description:
-      "Guarda keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
+      "GuardaFlow keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
     ogLocale: "en_GB",
   },
 
@@ -24,7 +24,7 @@ export const en = {
   hero: {
     eyebrow: "Bookmarks · personal planner",
     title: "Get back to the links you saved.",
-    body: "Guarda keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
+    body: "GuardaFlow keeps everything you save in one place. Turn it into a task if you like, and get reminded when the time comes.",
     cta: "Try it now",
     note: "Free · No sign-up · Your data stays in your browser",
   },
@@ -149,7 +149,7 @@ export const en = {
   problem: {
     title: "Saving is easy. Getting back is hard.",
     before: "Until now",
-    after: "With Guarda",
+    after: "With GuardaFlow",
     rows: [
       {
         before: "The link sits in an open tab, until one day the tab gets closed.",
@@ -165,7 +165,7 @@ export const en = {
       },
       {
         before: "The “I'll read it later” moment never comes.",
-        after: "You pick a time to read it. When it comes, Guarda reminds you.",
+        after: "You pick a time to read it. When it comes, GuardaFlow reminds you.",
       },
     ],
   },
@@ -255,14 +255,14 @@ export const en = {
 
   organize: {
     title: "Your organization, your rules.",
-    body: "Nested collections, as many tags as you like. If Guarda suggests something, you see it as a suggestion. Nothing changes unless you accept it.",
+    body: "Nested collections, as many tags as you like. If GuardaFlow suggests something, you see it as a suggestion. Nothing changes unless you accept it.",
     accept: "Accept",
     reject: "Reject",
   },
 
   plan: {
     title: "Today's plan, from what you saved.",
-    body: "Open Guarda and what you need to read, watch or apply to today is right there, in order. Overdue items come first.",
+    body: "Open GuardaFlow and what you need to read, watch or apply to today is right there, in order. Overdue items come first.",
     note: "It's not a project management tool. It's just for getting back to the things you saved.",
     late: "overdue",
     items: [
@@ -283,14 +283,14 @@ export const en = {
   extras: {
     extensionTitle: "Browser extension",
     extensionBody:
-      "Press ⌘⇧S on any site and the page lands in your inbox. Pick its tags or collection right there. Anything you save while Guarda is closed waits in the extension and moves over when you open the app.",
+      "Press ⌘⇧S on any site and the page lands in your inbox. Pick its tags or collection right there. Anything you save while GuardaFlow is closed waits in the extension and moves over when you open the app.",
     typesTitle: "Save anything",
-    typesBody: "Guarda works out what kind of link it is. If it gets it wrong, you change it.",
+    typesBody: "GuardaFlow works out what kind of link it is. If it gets it wrong, you change it.",
     types: ["Article", "Video", "GitHub", "Product", "Job", "Documentation", "Social", "Website"],
   },
 
   suggestions: {
-    title: "Guarda suggests. You decide.",
+    title: "GuardaFlow suggests. You decide.",
     subtitle: "With Premium, for 500 bookmarks a month. It doesn't write text; it only picks among options.",
     label: "Suggestion · PostgreSQL Indexing",
     text: "This page looks like a fit for your Learning / Backend collection. Suggested tags: postgresql, indexing. Suggested task: read.",
@@ -413,7 +413,7 @@ export const en = {
       },
       {
         q: "How are payments handled?",
-        a: "Payments go through Polar. Your card details never reach Guarda's servers. You manage or cancel your subscription on Polar's page.",
+        a: "Payments go through Polar. Your card details never reach GuardaFlow's servers. You manage or cancel your subscription on Polar's page.",
       },
       {
         q: "What gets sent for smart suggestions?",

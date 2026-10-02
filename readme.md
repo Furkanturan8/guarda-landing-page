@@ -1,4 +1,4 @@
-# Guarda — Landing Page
+# GuardaFlow — Landing Page
 
 🔗 **Live Link For Free Demo:** [https://guarda-three.vercel.app/](https://guarda-three.vercel.app/)
 
@@ -6,17 +6,17 @@
 
 > ℹ️ **Note:** The Chrome Extension is currently submitted and pending review on the Chrome Web Store.
 
-The marketing site for **Guarda**, a bookmark manager and personal planner.
+The marketing site for **GuardaFlow**, a bookmark manager and personal planner.
 This repo contains the public landing page — the actual product
 (frontend app, backend API) lives in a separate, private repo. This README
 exists so anyone working on this site (including future-you) understands
-what Guarda *is* without needing access to that other repo.
+what GuardaFlow *is* without needing access to that other repo.
 
 ## About the Project
 
-**Guarda** is a modern, local-first bookmark manager and personal planner designed to solve a ubiquitous problem: saving hundreds of useful links and never looking back at them.
+**GuardaFlow** is a modern, local-first bookmark manager and personal planner designed to solve a ubiquitous problem: saving hundreds of useful links and never looking back at them.
 
-Steering clear of cluttered browser bookmarks and bulky note-taking apps, Guarda focuses on a streamlined workflow:
+Steering clear of cluttered browser bookmarks and bulky note-taking apps, GuardaFlow focuses on a streamlined workflow:
 
 > **Save → Organize → Plan → Complete**
 
@@ -33,42 +33,42 @@ Steering clear of cluttered browser bookmarks and bulky note-taking apps, Guarda
 A friction-free drop zone to save links on the fly. Drop URLs here throughout the day without stopping to categorize or tag them, then organize them when you have time.
 
 <p align="center">
-  <img src="public/screens/inbox-en.png" alt="Guarda Inbox" width="850">
+  <img src="public/screens/inbox-en.png" alt="GuardaFlow Inbox" width="850">
 </p>
 
 ### 2. 🔖 Bookmarks
 A visual, searchable gallery of all your saved bookmarks. Automatically extracts rich metadata (page title, description, favicon, cover image, and content type: article, video, GitHub repo, documentation, etc.).
 
 <p align="center">
-  <img src="public/screens/bookmarks-en.png" alt="Guarda Bookmarks" width="850">
+  <img src="public/screens/bookmarks-en.png" alt="GuardaFlow Bookmarks" width="850">
 </p>
 
 ### 3. 📁 Collections
 Structure your workspace with user-defined, nestable folders (e.g. `Learning > Backend`, `Design Inspiration`, `Projects`).
 
 <p align="center">
-  <img src="public/screens/collections-en.png" alt="Guarda Collections" width="850">
+  <img src="public/screens/collections-en.png" alt="GuardaFlow Collections" width="850">
 </p>
 
 ### 4. 🏷️ Tags
 Fast, multi-dimensional tagging independent of folder hierarchy. Group links across collections for instant filtering.
 
 <p align="center">
-  <img src="public/screens/tags-en.png" alt="Guarda Tags" width="850">
+  <img src="public/screens/tags-en.png" alt="GuardaFlow Tags" width="850">
 </p>
 
 ### 5. 📅 Planner & Tasks
 Turn links into action. Convert any bookmark into a task (`Read`, `Watch`, `Apply`, `Research`, …) with scheduled dates, deadlines, and reminders to ensure you actually follow through.
 
 <p align="center">
-  <img src="public/screens/planner-en.png" alt="Guarda Planner" width="850">
+  <img src="public/screens/planner-en.png" alt="GuardaFlow Planner" width="850">
 </p>
 
 ---
 
 ## Product architecture (context, not part of this repo)
 
-Guarda ships as a **tiered, local-first** product:
+GuardaFlow ships as a **tiered, local-first** product:
 
 | | Free | Premium |
 |---|---|---|

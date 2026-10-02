@@ -27,7 +27,7 @@ export function Footer({ t, links }: { t: Dictionary["footer"]; links: Dictionar
         <div className="mt-24 flex flex-wrap justify-between gap-6 border-t border-ink-hover pt-7 text-[13.5px] text-faint sm:mt-30">
           <div className="flex items-center gap-[9px] text-paper">
             <LogoBadge className="size-6 bg-ink-hover" check="#262626" />
-            <span className="text-base font-semibold tracking-[-.02em]">Guarda</span>
+            <span className="text-base font-semibold tracking-[-.02em]">GuardaFlow</span>
           </div>
           <div className="flex flex-wrap gap-6">
             {sectionLinks(links).map((l) => (
@@ -37,7 +37,7 @@ export function Footer({ t, links }: { t: Dictionary["footer"]; links: Dictionar
             ))}
             <span>{t.soon}</span>
           </div>
-          <span className="font-mono text-[11px] tracking-[.08em]">© 2026 Guarda</span>
+          <span className="font-mono text-[11px] tracking-[.08em]">© 2026 GuardaFlow</span>
         </div>
       </div>
     </footer>
